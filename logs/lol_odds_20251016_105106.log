@@ -1,0 +1,79 @@
+2025-10-16 10:51:06 | INFO     | __init__             | 📀 Database inicializado: C:\Users\matheus\code\lol_api_v2\data\lol_odds.db
+2025-10-16 10:51:06 | INFO     | run                  | ============================================================
+2025-10-16 10:51:06 | INFO     | run                  | 🚀 INICIANDO ATUALIZAÇÃO DO BANCO DE ODDS LOL
+2025-10-16 10:51:06 | INFO     | run                  | ============================================================
+2025-10-16 10:51:06 | INFO     | _fetch_events        | 
+📅 FASE 1: Buscando eventos...
+2025-10-16 10:51:06 | INFO     | fetch_upcoming_events | 🔍 Buscando eventos para os próximos 10 dias
+2025-10-16 10:51:06 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-16
+2025-10-16 10:51:15 | INFO     | fetch_upcoming_events |    ✅ 8 jogos de LoL encontrados
+2025-10-16 10:51:15 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-17
+2025-10-16 10:51:15 | INFO     | fetch_upcoming_events |    ✅ 4 jogos de LoL encontrados
+2025-10-16 10:51:15 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-18
+2025-10-16 10:51:16 | INFO     | fetch_upcoming_events |    ✅ 4 jogos de LoL encontrados
+2025-10-16 10:51:16 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-19
+2025-10-16 10:51:16 | INFO     | fetch_upcoming_events |    ✅ 2 jogos de LoL encontrados
+2025-10-16 10:51:16 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-20
+2025-10-16 10:51:16 | INFO     | fetch_upcoming_events |    ℹ️  Nenhum evento encontrado para 20251020
+2025-10-16 10:51:16 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-21
+2025-10-16 10:51:16 | INFO     | fetch_upcoming_events |    ℹ️  Nenhum evento encontrado para 20251021
+2025-10-16 10:51:16 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-22
+2025-10-16 10:51:17 | INFO     | fetch_upcoming_events |    ℹ️  Nenhum jogo de LoL encontrado
+2025-10-16 10:51:17 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-23
+2025-10-16 10:51:17 | INFO     | fetch_upcoming_events |    ℹ️  Nenhum evento encontrado para 20251023
+2025-10-16 10:51:17 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-24
+2025-10-16 10:51:17 | INFO     | fetch_upcoming_events |    ℹ️  Nenhum jogo de LoL encontrado
+2025-10-16 10:51:17 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-25
+2025-10-16 10:51:18 | INFO     | fetch_upcoming_events |    ℹ️  Nenhum jogo de LoL encontrado
+2025-10-16 10:51:18 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-26
+2025-10-16 10:51:18 | INFO     | fetch_upcoming_events |    ℹ️  Nenhum evento encontrado para 20251026
+2025-10-16 10:51:18 | INFO     | fetch_upcoming_events | 📊 Total de eventos encontrados: 18
+2025-10-16 10:51:18 | INFO     | save_events          | ✅ Novo evento: FlyQuest vs Vivo Keyd Stars - LOL - World Champs
+2025-10-16 10:51:18 | INFO     | save_events          | ✅ Novo evento: KT Rolster vs Team Secret Whales - LOL - World Champs
+2025-10-16 10:51:18 | INFO     | save_events          | ✅ Novo evento: Movistar KOI vs G2 Esports - LOL - World Champs
+2025-10-16 10:51:18 | INFO     | save_events          | ✅ Novo evento: Top Esports vs 100 Thieves - LOL - World Champs
+2025-10-16 10:51:18 | INFO     | save_events          | ✅ Novo evento: T1 vs CTBC Flying Oyster - LOL - World Champs
+2025-10-16 10:51:18 | INFO     | save_events          | ✅ Novo evento: Anyone's Legend vs Gen.G - LOL - World Champs
+2025-10-16 10:51:18 | INFO     | save_events          | ✅ Novo evento: Bilibili Gaming vs Fnatic - LOL - World Champs
+2025-10-16 10:51:18 | INFO     | save_events          | ✅ Novo evento: PSG Talon vs Hanwha Life Esports - LOL - World Champs
+2025-10-16 10:51:18 | INFO     | save_events          | ✅ Novo evento: CTBC Flying Oyster vs Anyone's Legend - LOL - World Champs
+2025-10-16 10:51:18 | INFO     | save_events          | ✅ Novo evento: KT Rolster vs Top Esports - LOL - World Champs
+2025-10-16 10:51:18 | INFO     | save_events          | ✅ Novo evento: ROSSMANN Centaurs vs Los Heretics - LOL - EMEA Masters Summer
+2025-10-16 10:51:18 | INFO     | save_events          | ✅ Novo evento: Los Ratones vs Galions - LOL - EMEA Masters Summer
+2025-10-16 10:51:18 | INFO     | save_events          | ✅ Novo evento: G2 Esports vs Bilibili Gaming - LOL - World Champs
+2025-10-16 10:51:18 | INFO     | save_events          | ✅ Novo evento: Gen.G vs T1 - LOL - World Champs
+2025-10-16 10:51:18 | INFO     | save_events          | ✅ Novo evento: Team Secret Whales vs FlyQuest - LOL - World Champs
+2025-10-16 10:51:18 | INFO     | save_events          | ✅ Novo evento: 100 Thieves vs Hanwha Life Esports - LOL - World Champs
+2025-10-16 10:51:18 | INFO     | save_events          | ✅ Novo evento: Vivo Keyd Stars vs PSG Talon - LOL - World Champs
+2025-10-16 10:51:18 | INFO     | save_events          | ✅ Novo evento: Movistar KOI vs Fnatic - LOL - World Champs
+2025-10-16 10:51:18 | INFO     | save_events          | 📝 Eventos processados - Novos: 18, Existentes: 0
+2025-10-16 10:51:18 | INFO     | _fetch_events        | ✅ Fase 1 concluída - 18 novos eventos adicionados
+2025-10-16 10:51:18 | INFO     | _update_odds         | 
+💰 FASE 2: Atualizando odds...
+2025-10-16 10:51:18 | INFO     | fetch_and_save_odds  | 💰 Coletando odds para 18 eventos em lotes de 10
+2025-10-16 10:51:18 | INFO     | fetch_and_save_odds  |    📦 Processando lote 1/2
+2025-10-16 10:51:18 | ERROR    | _fetch_odds_for_event |       ❌ Erro ao coletar odds para FlyQuest vs Vivo Keyd Stars: no such column: FI
+2025-10-16 10:51:18 | ERROR    | _fetch_odds_for_event |       ❌ Erro ao coletar odds para KT Rolster vs Team Secret Whales: no such column: FI
+2025-10-16 10:51:18 | ERROR    | _fetch_odds_for_event |       ❌ Erro ao coletar odds para KT Rolster vs Top Esports: no such column: FI
+2025-10-16 10:51:18 | ERROR    | _fetch_odds_for_event |       ❌ Erro ao coletar odds para Movistar KOI vs G2 Esports: no such column: FI
+2025-10-16 10:51:18 | ERROR    | _fetch_odds_for_event |       ❌ Erro ao coletar odds para T1 vs CTBC Flying Oyster: no such column: FI
+2025-10-16 10:51:18 | ERROR    | _fetch_odds_for_event |       ❌ Erro ao coletar odds para Bilibili Gaming vs Fnatic: no such column: FI
+2025-10-16 10:51:18 | ERROR    | _fetch_odds_for_event |       ❌ Erro ao coletar odds para Top Esports vs 100 Thieves: no such column: FI
+2025-10-16 10:51:18 | ERROR    | _fetch_odds_for_event |       ❌ Erro ao coletar odds para PSG Talon vs Hanwha Life Esports: no such column: FI
+2025-10-16 10:51:18 | ERROR    | _fetch_odds_for_event |       ❌ Erro ao coletar odds para CTBC Flying Oyster vs Anyone's Legend: no such column: FI
+2025-10-16 10:51:18 | ERROR    | _fetch_odds_for_event |       ❌ Erro ao coletar odds para Anyone's Legend vs Gen.G: no such column: FI
+2025-10-16 10:51:19 | INFO     | fetch_and_save_odds  |    📦 Processando lote 2/2
+2025-10-16 10:51:19 | ERROR    | _fetch_odds_for_event |       ❌ Erro ao coletar odds para Team Secret Whales vs FlyQuest: no such column: FI
+2025-10-16 10:51:19 | ERROR    | _fetch_odds_for_event |       ❌ Erro ao coletar odds para Movistar KOI vs Fnatic: no such column: FI
+2025-10-16 10:51:19 | ERROR    | _fetch_odds_for_event |       ❌ Erro ao coletar odds para 100 Thieves vs Hanwha Life Esports: no such column: FI
+2025-10-16 10:51:19 | ERROR    | _fetch_odds_for_event |       ❌ Erro ao coletar odds para Gen.G vs T1: no such column: FI
+2025-10-16 10:51:19 | ERROR    | _fetch_odds_for_event |       ❌ Erro ao coletar odds para Vivo Keyd Stars vs PSG Talon: no such column: FI
+2025-10-16 10:51:19 | ERROR    | _fetch_odds_for_event |       ❌ Erro ao coletar odds para G2 Esports vs Bilibili Gaming: no such column: FI
+2025-10-16 10:51:19 | ERROR    | _fetch_odds_for_event |       ❌ Erro ao coletar odds para ROSSMANN Centaurs vs Los Heretics: no such column: FI
+2025-10-16 10:51:19 | ERROR    | _fetch_odds_for_event |       ❌ Erro ao coletar odds para Los Ratones vs Galions: no such column: FI
+2025-10-16 10:51:19 | INFO     | fetch_and_save_odds  | 📊 Coleta finalizada: 0/18 eventos com odds
+2025-10-16 10:51:19 | INFO     | _update_odds         | ✅ Fase 2 concluída - 0 eventos com odds atualizadas
+2025-10-16 10:51:19 | INFO     | _show_dashboard      | 💾 Dashboard salvo em: C:\Users\matheus\code\lol_api_v2\reports\dashboard_20251016_105119.txt
+2025-10-16 10:51:19 | INFO     | run                  | 
+✅ ATUALIZAÇÃO COMPLETA EM 12.9 SEGUNDOS
+2025-10-16 10:51:19 | INFO     | run                  | 🔌 Conexões fechadas

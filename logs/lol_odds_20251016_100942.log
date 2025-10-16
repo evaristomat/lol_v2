@@ -1,0 +1,48 @@
+2025-10-16 10:09:43 | INFO     | __init__             | 📀 Database inicializado: C:\Users\matheus\code\lol_api_v2\data\lol_odds.db
+2025-10-16 10:09:43 | INFO     | run                  | ============================================================
+2025-10-16 10:09:43 | INFO     | run                  | 🚀 INICIANDO ATUALIZAÇÃO DO BANCO DE ODDS LOL
+2025-10-16 10:09:43 | INFO     | run                  | ============================================================
+2025-10-16 10:09:43 | INFO     | _fetch_events        | 
+📅 FASE 1: Buscando eventos...
+2025-10-16 10:09:43 | INFO     | fetch_upcoming_events | 🔍 Buscando eventos para os próximos 10 dias
+2025-10-16 10:09:43 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-16
+2025-10-16 10:09:43 | INFO     | fetch_upcoming_events |    ✅ 8 jogos de LoL encontrados
+2025-10-16 10:09:43 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-17
+2025-10-16 10:09:44 | INFO     | fetch_upcoming_events |    ✅ 4 jogos de LoL encontrados
+2025-10-16 10:09:44 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-18
+2025-10-16 10:09:44 | INFO     | fetch_upcoming_events |    ✅ 4 jogos de LoL encontrados
+2025-10-16 10:09:44 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-19
+2025-10-16 10:09:44 | INFO     | fetch_upcoming_events |    ✅ 2 jogos de LoL encontrados
+2025-10-16 10:09:44 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-20
+2025-10-16 10:09:44 | INFO     | fetch_upcoming_events |    ℹ️  Nenhum evento encontrado para 20251020
+2025-10-16 10:09:44 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-21
+2025-10-16 10:09:45 | INFO     | fetch_upcoming_events |    ℹ️  Nenhum evento encontrado para 20251021
+2025-10-16 10:09:45 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-22
+2025-10-16 10:09:46 | INFO     | fetch_upcoming_events |    ℹ️  Nenhum jogo de LoL encontrado
+2025-10-16 10:09:46 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-23
+2025-10-16 10:09:46 | INFO     | fetch_upcoming_events |    ℹ️  Nenhum evento encontrado para 20251023
+2025-10-16 10:09:46 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-24
+2025-10-16 10:09:46 | INFO     | fetch_upcoming_events |    ℹ️  Nenhum jogo de LoL encontrado
+2025-10-16 10:09:46 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-25
+2025-10-16 10:09:47 | INFO     | fetch_upcoming_events |    ℹ️  Nenhum jogo de LoL encontrado
+2025-10-16 10:09:47 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-26
+2025-10-16 10:09:47 | INFO     | fetch_upcoming_events |    ℹ️  Nenhum evento encontrado para 20251026
+2025-10-16 10:09:47 | INFO     | fetch_upcoming_events | 📊 Total de eventos encontrados: 18
+2025-10-16 10:09:47 | ERROR    | run                  | ❌ Erro durante atualização: FOREIGN KEY constraint failed
+Traceback (most recent call last):
+  File "C:\Users\matheus\code\lol_api_v2\src\get_odds\orchestrator.py", line 35, in run
+    await self._fetch_events()
+  File "C:\Users\matheus\code\lol_api_v2\src\get_odds\orchestrator.py", line 55, in _fetch_events
+    stats = self.event_service.save_events(events)
+  File "C:\Users\matheus\code\lol_api_v2\src\get_odds\services\event_service.py", line 89, in save_events
+    conn.execute(
+    ~~~~~~~~~~~~^
+        """
+        ^^^
+    ...<11 lines>...
+        ),
+        ^^
+    )
+    ^
+sqlite3.IntegrityError: FOREIGN KEY constraint failed
+2025-10-16 10:09:47 | INFO     | run                  | 🔌 Conexões fechadas

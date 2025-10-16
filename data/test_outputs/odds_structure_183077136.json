@@ -1,0 +1,1192 @@
+{
+  "FI": "183077136",
+  "event_id": "10838629",
+  "main": {
+    "updated_at": "1760590987",
+    "key": "#AC#B151#C21087767#D19#E23997054#F19#",
+    "sp": {
+      "match_lines": {
+        "id": "1510001",
+        "name": "Match Lines",
+        "odds": [
+          {
+            "id": "1869681808",
+            "odds": "1.20",
+            "header": "1",
+            "name": "To Win",
+            "handicap": ""
+          },
+          {
+            "id": "1869681811",
+            "odds": "4.33",
+            "header": "2",
+            "name": "To Win",
+            "handicap": ""
+          }
+        ]
+      },
+      "map_1_first_team_to": {
+        "id": "1513007",
+        "name": "Map 1 - First Team To",
+        "odds": [
+          {
+            "id": "1869696854",
+            "odds": "1.66",
+            "header": "1",
+            "name": "First Blood",
+            "handicap": ""
+          },
+          {
+            "id": "1869697392",
+            "odds": "1.33",
+            "header": "1",
+            "name": "Slay Atakhan",
+            "handicap": ""
+          },
+          {
+            "id": "1869697229",
+            "odds": "1.30",
+            "header": "1",
+            "name": "Slay Baron",
+            "handicap": ""
+          },
+          {
+            "id": "1869696889",
+            "odds": "1.20",
+            "header": "1",
+            "name": "Destroy Inhibitor",
+            "handicap": ""
+          },
+          {
+            "id": "1869696859",
+            "odds": "2.10",
+            "header": "2",
+            "name": "First Blood",
+            "handicap": ""
+          },
+          {
+            "id": "1869697396",
+            "odds": "3.25",
+            "header": "2",
+            "name": "Slay Atakhan",
+            "handicap": ""
+          },
+          {
+            "id": "1869697232",
+            "odds": "3.40",
+            "header": "2",
+            "name": "Slay Baron",
+            "handicap": ""
+          },
+          {
+            "id": "1869696895",
+            "odds": "4.33",
+            "header": "2",
+            "name": "Destroy Inhibitor",
+            "handicap": ""
+          }
+        ]
+      },
+      "map_1_handicaps": {
+        "id": "1511010",
+        "name": "Map 1 - Handicaps",
+        "odds": [
+          {
+            "id": "1869697264",
+            "odds": "1.80",
+            "header": "1",
+            "name": "Kill Handicap",
+            "handicap": "-10.5"
+          },
+          {
+            "id": "1869697265",
+            "odds": "1.90",
+            "header": "2",
+            "name": "Kill Handicap",
+            "handicap": "+10.5"
+          }
+        ]
+      },
+      "map_1_tower_handicap": {
+        "id": "1511049",
+        "name": "Map 1 - Tower Handicap\r\n",
+        "odds": [
+          {
+            "id": "1869697367",
+            "odds": "1.80",
+            "header": "1",
+            "handicap": "-6.5"
+          },
+          {
+            "id": "1869697370",
+            "odds": "1.90",
+            "header": "2",
+            "handicap": "+6.5"
+          }
+        ]
+      },
+      "map_1_dragon_handicap": {
+        "id": "1511001",
+        "name": "Map 1 - Dragon Handicap",
+        "odds": [
+          {
+            "id": "1869697212",
+            "odds": "1.90",
+            "header": "1",
+            "handicap": "-1.5"
+          },
+          {
+            "id": "1869697214",
+            "odds": "1.80",
+            "header": "2",
+            "handicap": "+1.5"
+          }
+        ]
+      },
+      "map_1_totals": {
+        "id": "1510845",
+        "name": "Map 1 - Totals",
+        "odds": [
+          {
+            "id": "1869697082",
+            "odds": "1.83",
+            "header": "Over",
+            "name": "Total Kills",
+            "handicap": "28.5"
+          },
+          {
+            "id": "1869697346",
+            "odds": "2.50",
+            "header": "Over",
+            "name": "Total Towers",
+            "handicap": "11.5"
+          },
+          {
+            "id": "1869696748",
+            "odds": "2.50",
+            "header": "Over",
+            "name": "Total Dragons",
+            "handicap": "4.5"
+          },
+          {
+            "id": "1869696738",
+            "odds": "6.00",
+            "header": "Over",
+            "name": "Total Barons",
+            "handicap": "1.5"
+          },
+          {
+            "id": "1869696765",
+            "odds": "1.80",
+            "header": "Over",
+            "name": "Total Inhibitors",
+            "handicap": "1.5"
+          },
+          {
+            "id": "1869697086",
+            "odds": "1.83",
+            "header": "Under",
+            "name": "Total Kills",
+            "handicap": "28.5"
+          },
+          {
+            "id": "1869697349",
+            "odds": "1.50",
+            "header": "Under",
+            "name": "Total Towers",
+            "handicap": "11.5"
+          },
+          {
+            "id": "1869696751",
+            "odds": "1.50",
+            "header": "Under",
+            "name": "Total Dragons",
+            "handicap": "4.5"
+          },
+          {
+            "id": "1869696741",
+            "odds": "1.11",
+            "header": "Under",
+            "name": "Total Barons",
+            "handicap": "1.5"
+          },
+          {
+            "id": "1869696767",
+            "odds": "1.90",
+            "header": "Under",
+            "name": "Total Inhibitors",
+            "handicap": "1.5"
+          }
+        ]
+      },
+      "flyquest_vs_vivo_keyd_stars": {
+        "id": 0,
+        "name": "FlyQuest vs Vivo Keyd Stars",
+        "odds": []
+      }
+    }
+  },
+  "map_1": {
+    "updated_at": "1760590592",
+    "key": "#AC#B151#C21087767#D19#E23997054#F19#I2#",
+    "sp": {
+      "map_1_first_team_to": {
+        "id": "1513007",
+        "name": "Map 1 - First Team To",
+        "odds": [
+          {
+            "id": "1869696854",
+            "odds": "1.66",
+            "header": "1",
+            "name": "First Blood",
+            "handicap": ""
+          },
+          {
+            "id": "1869697392",
+            "odds": "1.33",
+            "header": "1",
+            "name": "Slay Atakhan",
+            "handicap": ""
+          },
+          {
+            "id": "1869697229",
+            "odds": "1.30",
+            "header": "1",
+            "name": "Slay Baron",
+            "handicap": ""
+          },
+          {
+            "id": "1869696889",
+            "odds": "1.20",
+            "header": "1",
+            "name": "Destroy Inhibitor",
+            "handicap": ""
+          },
+          {
+            "id": "1869696859",
+            "odds": "2.10",
+            "header": "2",
+            "name": "First Blood",
+            "handicap": ""
+          },
+          {
+            "id": "1869697396",
+            "odds": "3.25",
+            "header": "2",
+            "name": "Slay Atakhan",
+            "handicap": ""
+          },
+          {
+            "id": "1869697232",
+            "odds": "3.40",
+            "header": "2",
+            "name": "Slay Baron",
+            "handicap": ""
+          },
+          {
+            "id": "1869696895",
+            "odds": "4.33",
+            "header": "2",
+            "name": "Destroy Inhibitor",
+            "handicap": ""
+          }
+        ]
+      },
+      "map_1_handicaps": {
+        "id": "1511010",
+        "name": "Map 1 - Handicaps",
+        "odds": [
+          {
+            "id": "1869697264",
+            "odds": "1.83",
+            "header": "1",
+            "name": "Kill Handicap",
+            "handicap": "-9.5"
+          },
+          {
+            "id": "1869697265",
+            "odds": "1.83",
+            "header": "2",
+            "name": "Kill Handicap",
+            "handicap": "+9.5"
+          }
+        ]
+      },
+      "map_1_tower_handicap": {
+        "id": "1511049",
+        "name": "Map 1 - Tower Handicap\r\n",
+        "odds": [
+          {
+            "id": "1869697367",
+            "odds": "1.80",
+            "header": "1",
+            "handicap": "-6.5"
+          },
+          {
+            "id": "1869697370",
+            "odds": "1.90",
+            "header": "2",
+            "handicap": "+6.5"
+          }
+        ]
+      },
+      "map_1_dragon_handicap": {
+        "id": "1511001",
+        "name": "Map 1 - Dragon Handicap",
+        "odds": [
+          {
+            "id": "1869697212",
+            "odds": "1.90",
+            "header": "1",
+            "handicap": "-1.5"
+          },
+          {
+            "id": "1869697214",
+            "odds": "1.80",
+            "header": "2",
+            "handicap": "+1.5"
+          }
+        ]
+      },
+      "map_1_totals": {
+        "id": "1510845",
+        "name": "Map 1 - Totals",
+        "odds": [
+          {
+            "id": "1869697082",
+            "odds": "1.83",
+            "header": "Over",
+            "name": "Total Kills",
+            "handicap": "28.5"
+          },
+          {
+            "id": "1869697346",
+            "odds": "2.50",
+            "header": "Over",
+            "name": "Total Towers",
+            "handicap": "11.5"
+          },
+          {
+            "id": "1869696748",
+            "odds": "2.50",
+            "header": "Over",
+            "name": "Total Dragons",
+            "handicap": "4.5"
+          },
+          {
+            "id": "1869696738",
+            "odds": "6.00",
+            "header": "Over",
+            "name": "Total Barons",
+            "handicap": "1.5"
+          },
+          {
+            "id": "1869696765",
+            "odds": "1.80",
+            "header": "Over",
+            "name": "Total Inhibitors",
+            "handicap": "1.5"
+          },
+          {
+            "id": "1869697086",
+            "odds": "1.83",
+            "header": "Under",
+            "name": "Total Kills",
+            "handicap": "28.5"
+          },
+          {
+            "id": "1869697349",
+            "odds": "1.50",
+            "header": "Under",
+            "name": "Total Towers",
+            "handicap": "11.5"
+          },
+          {
+            "id": "1869696751",
+            "odds": "1.50",
+            "header": "Under",
+            "name": "Total Dragons",
+            "handicap": "4.5"
+          },
+          {
+            "id": "1869696741",
+            "odds": "1.11",
+            "header": "Under",
+            "name": "Total Barons",
+            "handicap": "1.5"
+          },
+          {
+            "id": "1869696767",
+            "odds": "1.90",
+            "header": "Under",
+            "name": "Total Inhibitors",
+            "handicap": "1.5"
+          }
+        ]
+      },
+      "map_1_map_duration_2_way": {
+        "id": "1511013",
+        "name": "Map 1 - Map Duration 2-Way",
+        "odds": [
+          {
+            "id": "1869751740",
+            "odds": "1.83",
+            "header": "Over or Exactly",
+            "name": "31:30"
+          },
+          {
+            "id": "1869751750",
+            "odds": "1.83",
+            "header": "Under",
+            "name": "31:30"
+          }
+        ]
+      },
+      "map_1_race_to_#_kills": {
+        "id": "1511022",
+        "name": "Map 1 - Race to # Kills",
+        "odds": [
+          {
+            "id": "1869696721",
+            "odds": "1.44",
+            "header": "1",
+            "name": "5"
+          },
+          {
+            "id": "1869696970",
+            "odds": "1.33",
+            "header": "1",
+            "name": "10"
+          },
+          {
+            "id": "1869696998",
+            "odds": "1.28",
+            "header": "1",
+            "name": "15"
+          },
+          {
+            "id": "1869697032",
+            "odds": "1.22",
+            "header": "1",
+            "name": "20"
+          },
+          {
+            "id": "1869697056",
+            "odds": "1.20",
+            "header": "1",
+            "name": "25"
+          },
+          {
+            "id": "1869696691",
+            "odds": "1.20",
+            "header": "1",
+            "name": "30"
+          },
+          {
+            "id": "1869696723",
+            "odds": "2.62",
+            "header": "2",
+            "name": "5"
+          },
+          {
+            "id": "1869696975",
+            "odds": "3.25",
+            "header": "2",
+            "name": "10"
+          },
+          {
+            "id": "1869697001",
+            "odds": "3.50",
+            "header": "2",
+            "name": "15"
+          },
+          {
+            "id": "1869697037",
+            "odds": "4.00",
+            "header": "2",
+            "name": "20"
+          },
+          {
+            "id": "1869697060",
+            "odds": "4.33",
+            "header": "2",
+            "name": "25"
+          },
+          {
+            "id": "1869696698",
+            "odds": "4.33",
+            "header": "2",
+            "name": "30"
+          }
+        ]
+      },
+      "map_1_both_teams_to": {
+        "id": "1511000",
+        "name": "Map 1 - Both Teams to",
+        "odds": [
+          {
+            "id": "1869697170",
+            "odds": "1.33",
+            "header": "Yes",
+            "name": "Slay a Dragon",
+            "handicap": ""
+          },
+          {
+            "id": "1869697144",
+            "odds": "11.00",
+            "header": "Yes",
+            "name": "Slay a Baron",
+            "handicap": ""
+          },
+          {
+            "id": "1869697111",
+            "odds": "9.00",
+            "header": "Yes",
+            "name": "Destroy an Inhibitor",
+            "handicap": ""
+          },
+          {
+            "id": "1869697178",
+            "odds": "3.25",
+            "header": "No",
+            "name": "Slay a Dragon",
+            "handicap": ""
+          },
+          {
+            "id": "1869697148",
+            "odds": "1.02",
+            "header": "No",
+            "name": "Slay a Baron",
+            "handicap": ""
+          },
+          {
+            "id": "1869697115",
+            "odds": "1.04",
+            "header": "No",
+            "name": "Destroy an Inhibitor",
+            "handicap": ""
+          }
+        ]
+      },
+      "map_1_first_dragon_to_spawn": {
+        "id": "1511004",
+        "name": "Map 1 - First Dragon to Spawn",
+        "odds": [
+          {
+            "id": "1869697244",
+            "odds": "5.50",
+            "name": "Cloud"
+          },
+          {
+            "id": "1869697247",
+            "odds": "5.50",
+            "name": "Infernal"
+          },
+          {
+            "id": "1869697249",
+            "odds": "5.50",
+            "name": "Mountain"
+          },
+          {
+            "id": "1869697250",
+            "odds": "5.50",
+            "name": "Ocean"
+          },
+          {
+            "id": "1869697252",
+            "odds": "5.50",
+            "name": "Chemtech"
+          },
+          {
+            "id": "1869697253",
+            "odds": "5.50",
+            "name": "Hextech"
+          }
+        ]
+      },
+      "map_1_either_team_to": {
+        "id": "1513006",
+        "name": "Map 1 - Either Team to",
+        "odds": [
+          {
+            "id": "1869696823",
+            "odds": "8.00",
+            "header": "Yes",
+            "name": "Score a Quadra",
+            "handicap": ""
+          },
+          {
+            "id": "1869696796",
+            "odds": "15.00",
+            "header": "Yes",
+            "name": "Score a Penta",
+            "handicap": ""
+          },
+          {
+            "id": "1869696829",
+            "odds": "1.06",
+            "header": "No",
+            "name": "Score a Quadra",
+            "handicap": ""
+          },
+          {
+            "id": "1869696802",
+            "odds": "1.01",
+            "header": "No",
+            "name": "Score a Penta",
+            "handicap": ""
+          }
+        ]
+      },
+      "map_1_largest_multi_kill": {
+        "id": "1511011",
+        "name": "Map 1 - Largest Multi-Kill",
+        "odds": [
+          {
+            "id": "1869697285",
+            "odds": "21.00",
+            "name": "Single"
+          },
+          {
+            "id": "1869697288",
+            "odds": "1.95",
+            "name": "Double"
+          },
+          {
+            "id": "1869697290",
+            "odds": "2.62",
+            "name": "Triple"
+          },
+          {
+            "id": "1869697292",
+            "odds": "8.00",
+            "name": "Quadra"
+          },
+          {
+            "id": "1869697294",
+            "odds": "15.00",
+            "name": "Penta"
+          }
+        ]
+      },
+      "map_1_total_kills_odd_even": {
+        "id": "1511047",
+        "name": "Map 1 - Total Kills Odd/Even",
+        "odds": [
+          {
+            "id": "1869697326",
+            "odds": "1.83",
+            "name": "Odd",
+            "handicap": ""
+          },
+          {
+            "id": "1869697329",
+            "odds": "1.83",
+            "name": "Even",
+            "handicap": ""
+          }
+        ]
+      }
+    }
+  },
+  "others": [
+    {
+      "updated_at": "1760589710",
+      "sp": {
+        "map_1_first_dragon_to_spawn": {
+          "id": "1511004",
+          "name": "Map 1 - First Dragon to Spawn",
+          "odds": [
+            {
+              "id": "1869697244",
+              "odds": "5.50",
+              "name": "Cloud"
+            },
+            {
+              "id": "1869697247",
+              "odds": "5.50",
+              "name": "Infernal"
+            },
+            {
+              "id": "1869697249",
+              "odds": "5.50",
+              "name": "Mountain"
+            },
+            {
+              "id": "1869697250",
+              "odds": "5.50",
+              "name": "Ocean"
+            },
+            {
+              "id": "1869697252",
+              "odds": "5.50",
+              "name": "Chemtech"
+            },
+            {
+              "id": "1869697253",
+              "odds": "5.50",
+              "name": "Hextech"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "player": {
+    "updated_at": "1760591333",
+    "key": "#AC#B151#C21087767#D19#E23997054#F19#I11#",
+    "sp": {
+      "map_1_player_total_kills": {
+        "id": "1512984",
+        "name": "Map 1 - Player Total Kills",
+        "odds": [
+          {
+            "id": "1871171375",
+            "odds": "1.72",
+            "header": "Over",
+            "name": "Bwipo",
+            "handicap": "4.5"
+          },
+          {
+            "id": "1871171429",
+            "odds": "2.00",
+            "header": "Over",
+            "name": "Inspired",
+            "handicap": "3.5"
+          },
+          {
+            "id": "1871171470",
+            "odds": "2.00",
+            "header": "Over",
+            "name": "Quad",
+            "handicap": "4.5"
+          },
+          {
+            "id": "1871171666",
+            "odds": "2.00",
+            "header": "Over",
+            "name": "Massu",
+            "handicap": "6.5"
+          },
+          {
+            "id": "1871171705",
+            "odds": "1.53",
+            "header": "Over",
+            "name": "Busio",
+            "handicap": "0.5"
+          },
+          {
+            "id": "1871171729",
+            "odds": "2.10",
+            "header": "Over",
+            "name": "Boal",
+            "handicap": "1.5"
+          },
+          {
+            "id": "1871171748",
+            "odds": "1.61",
+            "header": "Over",
+            "name": "Disamis",
+            "handicap": "1.5"
+          },
+          {
+            "id": "1871171769",
+            "odds": "1.61",
+            "header": "Over",
+            "name": "Mireu",
+            "handicap": "1.5"
+          },
+          {
+            "id": "1871171789",
+            "odds": "1.66",
+            "header": "Over",
+            "name": "Morttheus",
+            "handicap": "2.5"
+          },
+          {
+            "id": "1871171941",
+            "odds": "2.50",
+            "header": "Over",
+            "name": "Trymbi",
+            "handicap": "0.5"
+          },
+          {
+            "id": "1871171377",
+            "odds": "2.00",
+            "header": "Under",
+            "name": "Bwipo",
+            "handicap": "4.5"
+          },
+          {
+            "id": "1871171431",
+            "odds": "1.72",
+            "header": "Under",
+            "name": "Inspired",
+            "handicap": "3.5"
+          },
+          {
+            "id": "1871171472",
+            "odds": "1.72",
+            "header": "Under",
+            "name": "Quad",
+            "handicap": "4.5"
+          },
+          {
+            "id": "1871171668",
+            "odds": "1.72",
+            "header": "Under",
+            "name": "Massu",
+            "handicap": "6.5"
+          },
+          {
+            "id": "1871171707",
+            "odds": "2.37",
+            "header": "Under",
+            "name": "Busio",
+            "handicap": "0.5"
+          },
+          {
+            "id": "1871171730",
+            "odds": "1.66",
+            "header": "Under",
+            "name": "Boal",
+            "handicap": "1.5"
+          },
+          {
+            "id": "1871171751",
+            "odds": "2.20",
+            "header": "Under",
+            "name": "Disamis",
+            "handicap": "1.5"
+          },
+          {
+            "id": "1871171771",
+            "odds": "2.20",
+            "header": "Under",
+            "name": "Mireu",
+            "handicap": "1.5"
+          },
+          {
+            "id": "1871171790",
+            "odds": "2.10",
+            "header": "Under",
+            "name": "Morttheus",
+            "handicap": "2.5"
+          },
+          {
+            "id": "1871171945",
+            "odds": "1.50",
+            "header": "Under",
+            "name": "Trymbi",
+            "handicap": "0.5"
+          }
+        ]
+      },
+      "map_1_player_total_deaths": {
+        "id": "1512983",
+        "name": "Map 1 - Player Total Deaths",
+        "odds": [
+          {
+            "id": "1871171395",
+            "odds": "2.10",
+            "header": "Over",
+            "name": "Bwipo",
+            "handicap": "2.5"
+          },
+          {
+            "id": "1871171441",
+            "odds": "1.66",
+            "header": "Over",
+            "name": "Inspired",
+            "handicap": "1.5"
+          },
+          {
+            "id": "1871171520",
+            "odds": "1.50",
+            "header": "Over",
+            "name": "Quad",
+            "handicap": "1.5"
+          },
+          {
+            "id": "1871171685",
+            "odds": "1.83",
+            "header": "Over",
+            "name": "Massu",
+            "handicap": "1.5"
+          },
+          {
+            "id": "1871171716",
+            "odds": "1.50",
+            "header": "Over",
+            "name": "Busio",
+            "handicap": "1.5"
+          },
+          {
+            "id": "1871171737",
+            "odds": "1.57",
+            "header": "Over",
+            "name": "Boal",
+            "handicap": "3.5"
+          },
+          {
+            "id": "1871171757",
+            "odds": "1.61",
+            "header": "Over",
+            "name": "Disamis",
+            "handicap": "3.5"
+          },
+          {
+            "id": "1871171775",
+            "odds": "1.66",
+            "header": "Over",
+            "name": "Mireu",
+            "handicap": "3.5"
+          },
+          {
+            "id": "1871171807",
+            "odds": "2.25",
+            "header": "Over",
+            "name": "Morttheus",
+            "handicap": "3.5"
+          },
+          {
+            "id": "1871171992",
+            "odds": "1.61",
+            "header": "Over",
+            "name": "Trymbi",
+            "handicap": "4.5"
+          },
+          {
+            "id": "1871171400",
+            "odds": "1.66",
+            "header": "Under",
+            "name": "Bwipo",
+            "handicap": "2.5"
+          },
+          {
+            "id": "1871171442",
+            "odds": "2.10",
+            "header": "Under",
+            "name": "Inspired",
+            "handicap": "1.5"
+          },
+          {
+            "id": "1871171523",
+            "odds": "2.50",
+            "header": "Under",
+            "name": "Quad",
+            "handicap": "1.5"
+          },
+          {
+            "id": "1871171686",
+            "odds": "1.83",
+            "header": "Under",
+            "name": "Massu",
+            "handicap": "1.5"
+          },
+          {
+            "id": "1871171718",
+            "odds": "2.50",
+            "header": "Under",
+            "name": "Busio",
+            "handicap": "1.5"
+          },
+          {
+            "id": "1871171738",
+            "odds": "2.25",
+            "header": "Under",
+            "name": "Boal",
+            "handicap": "3.5"
+          },
+          {
+            "id": "1871171758",
+            "odds": "2.20",
+            "header": "Under",
+            "name": "Disamis",
+            "handicap": "3.5"
+          },
+          {
+            "id": "1871171776",
+            "odds": "2.10",
+            "header": "Under",
+            "name": "Mireu",
+            "handicap": "3.5"
+          },
+          {
+            "id": "1871171810",
+            "odds": "1.57",
+            "header": "Under",
+            "name": "Morttheus",
+            "handicap": "3.5"
+          },
+          {
+            "id": "1871171997",
+            "odds": "2.20",
+            "header": "Under",
+            "name": "Trymbi",
+            "handicap": "4.5"
+          }
+        ]
+      },
+      "map_1_player_total_assists": {
+        "id": "1512982",
+        "name": "Map 1 - Player Total Assists",
+        "odds": [
+          {
+            "id": "1871171418",
+            "odds": "1.66",
+            "header": "Over",
+            "name": "Bwipo",
+            "handicap": "7.5"
+          },
+          {
+            "id": "1871171459",
+            "odds": "1.72",
+            "header": "Over",
+            "name": "Inspired",
+            "handicap": "8.5"
+          },
+          {
+            "id": "1871171650",
+            "odds": "2.10",
+            "header": "Over",
+            "name": "Quad",
+            "handicap": "9.5"
+          },
+          {
+            "id": "1871171692",
+            "odds": "2.10",
+            "header": "Over",
+            "name": "Massu",
+            "handicap": "7.5"
+          },
+          {
+            "id": "1871171724",
+            "odds": "1.83",
+            "header": "Over",
+            "name": "Busio",
+            "handicap": "14.5"
+          },
+          {
+            "id": "1871171743",
+            "odds": "2.10",
+            "header": "Over",
+            "name": "Boal",
+            "handicap": "3.5"
+          },
+          {
+            "id": "1871171763",
+            "odds": "2.20",
+            "header": "Over",
+            "name": "Disamis",
+            "handicap": "5.5"
+          },
+          {
+            "id": "1871171785",
+            "odds": "1.61",
+            "header": "Over",
+            "name": "Mireu",
+            "handicap": "3.5"
+          },
+          {
+            "id": "1871171864",
+            "odds": "1.90",
+            "header": "Over",
+            "name": "Morttheus",
+            "handicap": "3.5"
+          },
+          {
+            "id": "1871172069",
+            "odds": "1.80",
+            "header": "Over",
+            "name": "Trymbi",
+            "handicap": "5.5"
+          },
+          {
+            "id": "1871171420",
+            "odds": "2.10",
+            "header": "Under",
+            "name": "Bwipo",
+            "handicap": "7.5"
+          },
+          {
+            "id": "1871171461",
+            "odds": "2.00",
+            "header": "Under",
+            "name": "Inspired",
+            "handicap": "8.5"
+          },
+          {
+            "id": "1871171652",
+            "odds": "1.66",
+            "header": "Under",
+            "name": "Quad",
+            "handicap": "9.5"
+          },
+          {
+            "id": "1871171694",
+            "odds": "1.66",
+            "header": "Under",
+            "name": "Massu",
+            "handicap": "7.5"
+          },
+          {
+            "id": "1871171725",
+            "odds": "1.83",
+            "header": "Under",
+            "name": "Busio",
+            "handicap": "14.5"
+          },
+          {
+            "id": "1871171744",
+            "odds": "1.66",
+            "header": "Under",
+            "name": "Boal",
+            "handicap": "3.5"
+          },
+          {
+            "id": "1871171764",
+            "odds": "1.61",
+            "header": "Under",
+            "name": "Disamis",
+            "handicap": "5.5"
+          },
+          {
+            "id": "1871171786",
+            "odds": "2.20",
+            "header": "Under",
+            "name": "Mireu",
+            "handicap": "3.5"
+          },
+          {
+            "id": "1871171866",
+            "odds": "1.80",
+            "header": "Under",
+            "name": "Morttheus",
+            "handicap": "3.5"
+          },
+          {
+            "id": "1871172075",
+            "odds": "1.90",
+            "header": "Under",
+            "name": "Trymbi",
+            "handicap": "5.5"
+          }
+        ]
+      }
+    }
+  },
+  "schedule": {
+    "updated_at": "1760597763",
+    "key": "#AC#B151#C21087767#D48#E1510001#F10#",
+    "sp": {
+      "main": [
+        {
+          "id": "1869681808",
+          "odds": "1.20",
+          "name": "To Win"
+        }
+      ]
+    }
+  }
+}

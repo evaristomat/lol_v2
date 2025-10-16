@@ -1,0 +1,23 @@
+{
+  "id": "183017512",
+  "sport_id": "151",
+  "time": "1760511600",
+  "time_status": "3",
+  "league": {
+    "id": "10037076",
+    "name": "LOL - World Champs"
+  },
+  "home": {
+    "id": "10446600",
+    "name": "KT Rolster"
+  },
+  "away": {
+    "id": "11107700",
+    "name": "Movistar KOI"
+  },
+  "ss": "1-0",
+  "our_event_id": "10833200",
+  "r_id": "183017512C151A",
+  "updated_at": "1760519926",
+  "odds_updated_at": "1760519924"
+}

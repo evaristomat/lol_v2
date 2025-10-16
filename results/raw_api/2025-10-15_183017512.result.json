@@ -1,0 +1,209 @@
+{
+  "success": 1,
+  "results": [
+    {
+      "id": "10833200",
+      "sport_id": "151",
+      "time": "1760511600",
+      "time_status": "3",
+      "league": {
+        "id": "18794",
+        "name": "LOL - World Champs",
+        "cc": null
+      },
+      "home": {
+        "id": "5519",
+        "name": "KT Rolster",
+        "image_id": "240608",
+        "cc": "kr"
+      },
+      "away": {
+        "id": "958677",
+        "name": "Movistar KOI",
+        "image_id": "431335",
+        "cc": "es"
+      },
+      "ss": "1-0",
+      "scores": {
+        "1": {
+          "home": "1",
+          "away": "0"
+        },
+        "99": {
+          "home": "1",
+          "away": "0"
+        }
+      },
+      "events": [
+        {
+          "id": "266518632",
+          "text": "Map 1 - 00:00:00 - 1st Dragon Spawned (Cloud)"
+        },
+        {
+          "id": "266519527",
+          "text": "Map  - 00:08:04 - 1st Blood - Movistar KOI"
+        },
+        {
+          "id": "266519660",
+          "text": "Map 1 - 00:09:33 - 1st Dragon (5) - Movistar KOI"
+        },
+        {
+          "id": "266519661",
+          "text": "Map 1 - 00:09:33 - 2nd Dragon Spawned (ChemTech)"
+        },
+        {
+          "id": "266520134",
+          "text": "Map 1 - 00:14:58 - 1st Tower - Movistar KOI"
+        },
+        {
+          "id": "266520189",
+          "text": "Map 1 - 00:15:19 - 2nd Dragon (8) - Movistar KOI"
+        },
+        {
+          "id": "266520194",
+          "text": "Map 1 - 00:15:19 - 3rd Dragon Spawned (HexTech)"
+        },
+        {
+          "id": "266520316",
+          "text": "Map 1 - 00:16:03 - Race to 5 Kills - Movistar KOI"
+        },
+        {
+          "id": "266520365",
+          "text": "Map 1 - 00:16:21 - 2nd Tower - KT Rolster"
+        },
+        {
+          "id": "266520403",
+          "text": "Map 1 - 00:16:38 - 1st Rift Herald Slain - Movistar KOI"
+        },
+        {
+          "id": "266520904",
+          "text": "Map 1 - 00:20:39 - 3rd Dragon (9) - Movistar KOI"
+        },
+        {
+          "id": "266520910",
+          "text": "Map 1 - 00:20:39 - 4th Dragon Spawned (HexTech)"
+        },
+        {
+          "id": "266521405",
+          "text": "Map 1 - 00:24:29 - 3rd Tower - Movistar KOI"
+        },
+        {
+          "id": "266521471",
+          "text": "Map 1 - 00:25:01 - 1st Baron Spawned"
+        },
+        {
+          "id": "266521578",
+          "text": "Map 1 - 00:25:55 - 4th Dragon (9) - KT Rolster"
+        },
+        {
+          "id": "266521579",
+          "text": "Map 1 - 00:25:55 - 5th Dragon Spawned (HexTech)"
+        },
+        {
+          "id": "266521643",
+          "text": "Map 1 - 00:26:23 - 1st Baron - KT Rolster"
+        },
+        {
+          "id": "266521730",
+          "text": "Map 1 - 00:27:09 - 4th Tower - KT Rolster"
+        },
+        {
+          "id": "266521775",
+          "text": "Map 1 - 00:27:34 - 5th Tower - KT Rolster"
+        },
+        {
+          "id": "266521833",
+          "text": "Map 1 - 00:28:04 - 6th Tower - KT Rolster"
+        },
+        {
+          "id": "266521842",
+          "text": "Map 1 - 00:28:12 - 7th Tower - Movistar KOI"
+        },
+        {
+          "id": "266521906",
+          "text": "Map 1 - 00:28:51 - 8th Tower - KT Rolster"
+        },
+        {
+          "id": "266521950",
+          "text": "Map 1 - 00:29:18 - 9th Tower - KT Rolster"
+        },
+        {
+          "id": "266522144",
+          "text": "Map 1 - 00:31:19 - 5th Dragon (9) - KT Rolster"
+        },
+        {
+          "id": "266522145",
+          "text": "Map 1 - 00:31:19 - 6th Dragon Spawned (HexTech)"
+        },
+        {
+          "id": "266522156",
+          "text": "Map 1 - 00:31:23 - 10th Tower - Movistar KOI"
+        },
+        {
+          "id": "266522261",
+          "text": "Map 1 - 00:32:22 - 2nd Baron Spawned"
+        },
+        {
+          "id": "266522300",
+          "text": "Map 1 - 00:32:48 - Race to 10 Kills - KT Rolster"
+        },
+        {
+          "id": "266522333",
+          "text": "Map 1 - 00:33:08 - 11th Tower - KT Rolster"
+        },
+        {
+          "id": "266522340",
+          "text": "Map 1 - 00:33:10 - 1st Inhibitor - KT Rolster"
+        },
+        {
+          "id": "266522343",
+          "text": "Map 1 - 00:33:18 - 12th Tower - KT Rolster"
+        },
+        {
+          "id": "266522351",
+          "text": "Map 1 - 00:33:21 - 13th Tower - KT Rolster"
+        },
+        {
+          "id": "266522363",
+          "text": "Map 1 - Winner - KT Rolster"
+        }
+      ],
+      "extra": {
+        "bestofsets": "1"
+      },
+      "has_lineup": 0,
+      "period_stats": {
+        "1": {
+          "barons": [
+            "1",
+            "0"
+          ],
+          "dragons": [
+            "2",
+            "3"
+          ],
+          "gold": [
+            "63.7k",
+            "55.6k"
+          ],
+          "inhibitors": [
+            "1",
+            "0"
+          ],
+          "kills": [
+            "12",
+            "7"
+          ],
+          "towers": [
+            "9",
+            "4"
+          ]
+        }
+      },
+      "inplay_created_at": "1760511247",
+      "inplay_updated_at": "1760514619",
+      "confirmed_at": "1760630233",
+      "bet365_id": "183017512"
+    }
+  ]
+}

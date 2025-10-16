@@ -1,0 +1,22 @@
+
+============================================================
+📊 DASHBOARD - LOL ODDS DATABASE
+============================================================
+
+📈 ESTATÍSTICAS GERAIS:
+  Total de Eventos: 18
+  Total de Times: 20
+  Odds Atuais: 1,993
+  Player Odds: 820
+  Tamanho do Banco: 0.57 MB
+
+🎮 PRÓXIMOS EVENTOS:
+  Eventos Futuros: 18
+  Próximas 24h: 2
+
+📊 COBERTURA DE ODDS:
+  Eventos com Odds: 18/18 (100.0%)
+  Eventos com Player Odds: 10
+
+⏰ Última Atualização de Odds: 2025-10-16 14:13:30
+============================================================

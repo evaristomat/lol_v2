@@ -1,0 +1,105 @@
+2025-10-16 10:09:00 | INFO     | __init__             | 📀 Database inicializado: C:\Users\matheus\code\lol_api_v2\data\lol_odds.db
+2025-10-16 10:09:00 | INFO     | run                  | ============================================================
+2025-10-16 10:09:00 | INFO     | run                  | 🚀 INICIANDO ATUALIZAÇÃO DO BANCO DE ODDS LOL
+2025-10-16 10:09:00 | INFO     | run                  | ============================================================
+2025-10-16 10:09:00 | INFO     | _fetch_events        | 
+📅 FASE 1: Buscando eventos...
+2025-10-16 10:09:00 | INFO     | fetch_upcoming_events | 🔍 Buscando eventos para os próximos 10 dias
+2025-10-16 10:09:00 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-16
+2025-10-16 10:09:00 | ERROR    | fetch_upcoming_events | ❌ Erro ao buscar eventos para 20251016: HTTP error: Client error '401 Unauthorized' for url 'https://api.b365api.com/v1/bet365/upcoming?sport_id=151&day=20251016&token='
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2025-10-16 10:09:00 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-17
+2025-10-16 10:09:00 | ERROR    | fetch_upcoming_events | ❌ Erro ao buscar eventos para 20251017: HTTP error: Client error '401 Unauthorized' for url 'https://api.b365api.com/v1/bet365/upcoming?sport_id=151&day=20251017&token='
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2025-10-16 10:09:00 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-18
+2025-10-16 10:09:01 | ERROR    | fetch_upcoming_events | ❌ Erro ao buscar eventos para 20251018: HTTP error: Client error '401 Unauthorized' for url 'https://api.b365api.com/v1/bet365/upcoming?sport_id=151&day=20251018&token='
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2025-10-16 10:09:01 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-19
+2025-10-16 10:09:01 | ERROR    | fetch_upcoming_events | ❌ Erro ao buscar eventos para 20251019: HTTP error: Client error '401 Unauthorized' for url 'https://api.b365api.com/v1/bet365/upcoming?sport_id=151&day=20251019&token='
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2025-10-16 10:09:01 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-20
+2025-10-16 10:09:01 | ERROR    | fetch_upcoming_events | ❌ Erro ao buscar eventos para 20251020: HTTP error: Client error '401 Unauthorized' for url 'https://api.b365api.com/v1/bet365/upcoming?sport_id=151&day=20251020&token='
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2025-10-16 10:09:01 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-21
+2025-10-16 10:09:01 | ERROR    | fetch_upcoming_events | ❌ Erro ao buscar eventos para 20251021: HTTP error: Client error '401 Unauthorized' for url 'https://api.b365api.com/v1/bet365/upcoming?sport_id=151&day=20251021&token='
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2025-10-16 10:09:01 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-22
+2025-10-16 10:09:02 | ERROR    | fetch_upcoming_events | ❌ Erro ao buscar eventos para 20251022: HTTP error: Client error '401 Unauthorized' for url 'https://api.b365api.com/v1/bet365/upcoming?sport_id=151&day=20251022&token='
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2025-10-16 10:09:02 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-23
+2025-10-16 10:09:02 | ERROR    | fetch_upcoming_events | ❌ Erro ao buscar eventos para 20251023: HTTP error: Client error '401 Unauthorized' for url 'https://api.b365api.com/v1/bet365/upcoming?sport_id=151&day=20251023&token='
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2025-10-16 10:09:02 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-24
+2025-10-16 10:09:02 | ERROR    | fetch_upcoming_events | ❌ Erro ao buscar eventos para 20251024: HTTP error: Client error '401 Unauthorized' for url 'https://api.b365api.com/v1/bet365/upcoming?sport_id=151&day=20251024&token='
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2025-10-16 10:09:02 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-25
+2025-10-16 10:09:02 | ERROR    | fetch_upcoming_events | ❌ Erro ao buscar eventos para 20251025: HTTP error: Client error '401 Unauthorized' for url 'https://api.b365api.com/v1/bet365/upcoming?sport_id=151&day=20251025&token='
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2025-10-16 10:09:02 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-26
+2025-10-16 10:09:03 | ERROR    | fetch_upcoming_events | ❌ Erro ao buscar eventos para 20251026: HTTP error: Client error '401 Unauthorized' for url 'https://api.b365api.com/v1/bet365/upcoming?sport_id=151&day=20251026&token='
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2025-10-16 10:09:03 | INFO     | fetch_upcoming_events | 📊 Total de eventos encontrados: 0
+2025-10-16 10:09:03 | WARNING  | _fetch_events        | ℹ️ Nenhum evento encontrado
+2025-10-16 10:09:03 | INFO     | _update_odds         | 
+💰 FASE 2: Atualizando odds...
+2025-10-16 10:09:03 | INFO     | fetch_and_save_odds  | 💰 Coletando odds para 210 eventos em lotes de 10
+2025-10-16 10:09:03 | INFO     | fetch_and_save_odds  |    📦 Processando lote 1/21
+2025-10-16 10:09:03 | ERROR    | _fetch_odds_for_event |       ❌ Erro ao coletar odds para Hanwha Life Esports vs T1: HTTP error: Client error '401 Unauthorized' for url 'https://api.b365api.com/v3/bet365/prematch?FI=181148588&token='
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2025-10-16 10:09:03 | ERROR    | _fetch_odds_for_event |       ❌ Erro ao coletar odds para GAM Esports vs Team Secret Whales: HTTP error: Client error '401 Unauthorized' for url 'https://api.b365api.com/v3/bet365/prematch?FI=181208430&token='
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2025-10-16 10:09:03 | ERROR    | _fetch_odds_for_event |       ❌ Erro ao coletar odds para BNK FearX.Y vs DN Freecs.Ch: HTTP error: Client error '401 Unauthorized' for url 'https://api.b365api.com/v3/bet365/prematch?FI=181028948&token='
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2025-10-16 10:09:03 | ERROR    | _fetch_odds_for_event |       ❌ Erro ao coletar odds para Team Phantasma vs Gamespace MCE: HTTP error: Client error '401 Unauthorized' for url 'https://api.b365api.com/v3/bet365/prematch?FI=180787150&token='
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2025-10-16 10:09:03 | ERROR    | _fetch_odds_for_event |       ❌ Erro ao coletar odds para REJECT vs QT DIG: HTTP error: Client error '401 Unauthorized' for url 'https://api.b365api.com/v3/bet365/prematch?FI=180486735&token='
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2025-10-16 10:09:03 | ERROR    | _fetch_odds_for_event |       ❌ Erro ao coletar odds para Top Esports vs Bilibili Gaming: HTTP error: Client error '401 Unauthorized' for url 'https://api.b365api.com/v3/bet365/prematch?FI=181098281&token='
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2025-10-16 10:09:03 | ERROR    | _fetch_odds_for_event |       ❌ Erro ao coletar odds para Karmine Corp vs Team Vitality: HTTP error: Client error '401 Unauthorized' for url 'https://api.b365api.com/v3/bet365/prematch?FI=180940027&token='
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2025-10-16 10:09:03 | ERROR    | _fetch_odds_for_event |       ❌ Erro ao coletar odds para DRX.Ch vs Gen.G.GA: HTTP error: Client error '401 Unauthorized' for url 'https://api.b365api.com/v3/bet365/prematch?FI=181028947&token='
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2025-10-16 10:09:03 | ERROR    | _fetch_odds_for_event |       ❌ Erro ao coletar odds para Invictus Gaming vs Anyone's Legend: HTTP error: Client error '401 Unauthorized' for url 'https://api.b365api.com/v3/bet365/prematch?FI=181207989&token='
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2025-10-16 10:09:04 | ERROR    | _fetch_odds_for_event |       ❌ Erro ao coletar odds para RED Canids vs Shopify Rebellion: HTTP error: Client error '401 Unauthorized' for url 'https://api.b365api.com/v3/bet365/prematch?FI=180982020&token='
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2025-10-16 10:09:04 | INFO     | fetch_and_save_odds  |    📦 Processando lote 2/21
+2025-10-16 10:09:04 | ERROR    | _fetch_odds_for_event |       ❌ Erro ao coletar odds para PSG Talon vs Team Secret Whales: HTTP error: Client error '401 Unauthorized' for url 'https://api.b365api.com/v3/bet365/prematch?FI=181317325&token='
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2025-10-16 10:09:04 | ERROR    | _fetch_odds_for_event |       ❌ Erro ao coletar odds para Top Esports vs Anyone's Legend: HTTP error: Client error '401 Unauthorized' for url 'https://api.b365api.com/v3/bet365/prematch?FI=181429824&token='
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2025-10-16 10:09:04 | ERROR    | _fetch_odds_for_event |       ❌ Erro ao coletar odds para Dplus KIA vs BNK FearX: HTTP error: Client error '401 Unauthorized' for url 'https://api.b365api.com/v3/bet365/prematch?FI=181147685&token='
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2025-10-16 10:09:04 | ERROR    | _fetch_odds_for_event |       ❌ Erro ao coletar odds para Gen.G.GA vs BNK FearX.Y: HTTP error: Client error '401 Unauthorized' for url 'https://api.b365api.com/v3/bet365/prematch?FI=181384202&token='
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2025-10-16 10:09:04 | ERROR    | _fetch_odds_for_event |       ❌ Erro ao coletar odds para Movistar KOI vs G2 Esports: HTTP error: Client error '401 Unauthorized' for url 'https://api.b365api.com/v3/bet365/prematch?FI=180995943&token='
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2025-10-16 10:09:04 | ERROR    | _fetch_odds_for_event |       ❌ Erro ao coletar odds para Gen.G vs T1: HTTP error: Client error '401 Unauthorized' for url 'https://api.b365api.com/v3/bet365/prematch?FI=181540119&token='
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2025-10-16 10:09:04 | ERROR    | _fetch_odds_for_event |       ❌ Erro ao coletar odds para JD Gaming vs Anyone's Legend: HTTP error: Client error '401 Unauthorized' for url 'https://api.b365api.com/v3/bet365/prematch?FI=181316431&token='
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2025-10-16 10:09:04 | ERROR    | _fetch_odds_for_event |       ❌ Erro ao coletar odds para KT Rolster vs Hanwha Life Esports: HTTP error: Client error '401 Unauthorized' for url 'https://api.b365api.com/v3/bet365/prematch?FI=181308880&token='
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2025-10-16 10:09:04 | ERROR    | _fetch_odds_for_event |       ❌ Erro ao coletar odds para FlyQuest vs Vivo Keyd Stars: HTTP error: Client error '401 Unauthorized' for url 'https://api.b365api.com/v3/bet365/prematch?FI=180982021&token='
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2025-10-16 10:09:05 | ERROR    | _fetch_odds_for_event |       ❌ Erro ao coletar odds para T1 vs Dplus KIA: HTTP error: Client error '401 Unauthorized' for url 'https://api.b365api.com/v3/bet365/prematch?FI=181484444&token='
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2025-10-16 10:09:05 | INFO     | fetch_and_save_odds  |    📦 Processando lote 3/21
+2025-10-16 10:09:05 | ERROR    | _fetch_odds_for_event |       ❌ Erro ao coletar odds para 100 Thieves vs RED Canids: HTTP error: Client error '401 Unauthorized' for url 'https://api.b365api.com/v3/bet365/prematch?FI=181354822&token='
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2025-10-16 10:09:05 | ERROR    | _fetch_odds_for_event |       ❌ Erro ao coletar odds para T1.EA vs DRX.Ch: HTTP error: Client error '401 Unauthorized' for url 'https://api.b365api.com/v3/bet365/prematch?FI=181384204&token='
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2025-10-16 10:09:05 | ERROR    | _fetch_odds_for_event |       ❌ Erro ao coletar odds para FN Esports vs Forsaken: HTTP error: Client error '401 Unauthorized' for url 'https://api.b365api.com/v3/bet365/prematch?FI=181471619&token='
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2025-10-16 10:09:05 | ERROR    | _fetch_odds_for_event |       ❌ Erro ao coletar odds para aNc Legends vs Nightbirds: HTTP error: Client error '401 Unauthorized' for url 'https://api.b365api.com/v3/bet365/prematch?FI=181471618&token='
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2025-10-16 10:09:05 | ERROR    | _fetch_odds_for_event |       ❌ Erro ao coletar odds para Vitality.Bee vs Crvena Zvezda: HTTP error: Client error '401 Unauthorized' for url 'https://api.b365api.com/v3/bet365/prematch?FI=181471616&token='
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2025-10-16 10:09:05 | ERROR    | _fetch_odds_for_event |       ❌ Erro ao coletar odds para Rich Gang vs mCon esports: HTTP error: Client error '401 Unauthorized' for url 'https://api.b365api.com/v3/bet365/prematch?FI=181471617&token='
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2025-10-16 10:09:05 | ERROR    | _fetch_odds_for_event |       ❌ Erro ao coletar odds para DN Freecs.Ch vs BNK FearX.Y: HTTP error: Client error '401 Unauthorized' for url 'https://api.b365api.com/v3/bet365/prematch?FI=181769730&token='
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2025-10-16 10:09:05 | ERROR    | _fetch_odds_for_event |       ❌ Erro ao coletar odds para CTBC Flying Oyster vs Team Secret Whales: HTTP error: Client error '401 Unauthorized' for url 'https://api.b365api.com/v3/bet365/prematch?FI=181659026&token='
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2025-10-16 10:09:07 | INFO     | run                  | 🔌 Conexões fechadas
