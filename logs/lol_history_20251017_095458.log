@@ -1,0 +1,11 @@
+2025-10-17 09:54:59 | INFO     | run                  | 🚀 Iniciando atualização - últimos 3 dias
+2025-10-17 09:54:59 | INFO     | fetch_recent_matches | 🔍 Buscando últimos 3 dias
+2025-10-17 09:54:59 | INFO     | fetch_recent_matches | ✅ 2025-10-17: 4 partidas
+2025-10-17 09:55:00 | INFO     | fetch_recent_matches | ✅ 2025-10-16: 8 partidas
+2025-10-17 09:55:01 | INFO     | fetch_recent_matches | ✅ 2025-10-15: 9 partidas
+2025-10-17 09:55:01 | INFO     | fetch_and_process_matches | 📥 21 partidas da API
+2025-10-17 09:55:01 | INFO     | fetch_and_process_matches | 🔄 1 partidas incompletas no banco
+2025-10-17 09:55:09 | INFO     | process_incomplete_matches | 🔧 Tentando atualizar 1 partidas incompletas
+2025-10-17 09:55:09 | INFO     | process_incomplete_matches | 🔄 Tentando atualizar 183017505
+2025-10-17 09:55:09 | INFO     | process_incomplete_matches | 🔄 183017505 atualizada (ainda não finalizada)
+2025-10-17 09:55:09 | INFO     | run                  | ✅ Completo em 10.5s - Novas: 4, Atualizadas: 2, Erros: 0

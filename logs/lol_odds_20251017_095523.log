@@ -1,0 +1,43 @@
+2025-10-17 09:55:23 | INFO     | __init__             | 📀 Database inicializado: C:\Users\matheus\code\lol_api_v2\data\lol_odds.db
+2025-10-17 09:55:23 | INFO     | run                  | ============================================================
+2025-10-17 09:55:23 | INFO     | run                  | 🚀 INICIANDO ATUALIZAÇÃO DO BANCO DE ODDS LOL
+2025-10-17 09:55:23 | INFO     | run                  | ============================================================
+2025-10-17 09:55:23 | INFO     | _fetch_events        | 
+📅 FASE 1: Buscando eventos...
+2025-10-17 09:55:23 | INFO     | fetch_upcoming_events | 🔍 Buscando eventos para os próximos 10 dias
+2025-10-17 09:55:23 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-17
+2025-10-17 09:55:24 | INFO     | fetch_upcoming_events |    ✅ 4 jogos de LoL encontrados
+2025-10-17 09:55:24 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-18
+2025-10-17 09:55:27 | INFO     | fetch_upcoming_events |    ✅ 4 jogos de LoL encontrados
+2025-10-17 09:55:27 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-19
+2025-10-17 09:55:28 | INFO     | fetch_upcoming_events |    ✅ 2 jogos de LoL encontrados
+2025-10-17 09:55:28 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-20
+2025-10-17 09:55:30 | INFO     | fetch_upcoming_events |    ℹ️  Nenhum evento encontrado para 20251020
+2025-10-17 09:55:30 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-21
+2025-10-17 09:55:33 | INFO     | fetch_upcoming_events |    ℹ️  Nenhum evento encontrado para 20251021
+2025-10-17 09:55:33 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-22
+2025-10-17 09:55:34 | INFO     | fetch_upcoming_events |    ℹ️  Nenhum jogo de LoL encontrado
+2025-10-17 09:55:34 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-23
+2025-10-17 09:55:34 | INFO     | fetch_upcoming_events |    ℹ️  Nenhum evento encontrado para 20251023
+2025-10-17 09:55:34 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-24
+2025-10-17 09:55:34 | INFO     | fetch_upcoming_events |    ℹ️  Nenhum jogo de LoL encontrado
+2025-10-17 09:55:34 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-25
+2025-10-17 09:55:35 | INFO     | fetch_upcoming_events |    ℹ️  Nenhum jogo de LoL encontrado
+2025-10-17 09:55:35 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-26
+2025-10-17 09:55:35 | INFO     | fetch_upcoming_events |    ℹ️  Nenhum jogo de LoL encontrado
+2025-10-17 09:55:35 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-27
+2025-10-17 09:55:35 | INFO     | fetch_upcoming_events |    ℹ️  Nenhum evento encontrado para 20251027
+2025-10-17 09:55:35 | INFO     | fetch_upcoming_events | 📊 Total de eventos encontrados: 10
+2025-10-17 09:55:35 | INFO     | save_events          | 📝 Eventos processados - Novos: 0, Existentes: 10, Atualizados: 0
+2025-10-17 09:55:35 | INFO     | _fetch_events        | ✅ Fase 1 concluída - 0 novos eventos adicionados
+2025-10-17 09:55:35 | INFO     | _update_odds         | 
+💰 FASE 2: Atualizando odds...
+2025-10-17 09:55:35 | INFO     | fetch_and_save_odds  | 💰 Coletando odds para 18 eventos em lotes de 10
+2025-10-17 09:55:35 | INFO     | fetch_and_save_odds  |    📦 Processando lote 1/2
+2025-10-17 09:55:41 | INFO     | fetch_and_save_odds  |    📦 Processando lote 2/2
+2025-10-17 09:55:47 | INFO     | fetch_and_save_odds  | 📊 Coleta finalizada: 18/18 eventos com odds
+2025-10-17 09:55:47 | INFO     | _update_odds         | ✅ Fase 2 concluída - 18 eventos com odds atualizadas
+2025-10-17 09:55:47 | INFO     | _show_dashboard      | 💾 Dashboard salvo em: C:\Users\matheus\code\lol_api_v2\reports\dashboard_20251017_095547.txt
+2025-10-17 09:55:47 | INFO     | run                  | 
+✅ ATUALIZAÇÃO COMPLETA EM 23.7 SEGUNDOS
+2025-10-17 09:55:47 | INFO     | run                  | 🔌 Conexões fechadas

@@ -1,0 +1,15 @@
+2025-10-16 14:31:38 | INFO     | __init__             | 📀 Database inicializado: data\lol_history.db
+2025-10-16 14:31:38 | INFO     | run                  | ============================================================
+2025-10-16 14:31:38 | INFO     | run                  | 🚀 INICIANDO ATUALIZAÇÃO DO HISTÓRICO DE PARTIDAS
+2025-10-16 14:31:38 | INFO     | run                  | ============================================================
+2025-10-16 14:31:38 | INFO     | _fetch_and_process_matches | 
+📅 FASE 1: Buscando partidas dos últimos 2 dias...
+2025-10-16 14:31:38 | INFO     | fetch_recent_matches | 🔍 Buscando últimos 2 dias
+2025-10-16 14:31:39 | ERROR    | fetch_recent_matches | ❌ Erro 20251016: HTTP error: Client error '401 Unauthorized' for url 'https://api.b365api.com/v1/bet365/upcoming?sport_id=151&day=20251016&token='
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2025-10-16 14:31:39 | ERROR    | fetch_recent_matches | ❌ Erro 20251015: HTTP error: Client error '401 Unauthorized' for url 'https://api.b365api.com/v1/bet365/upcoming?sport_id=151&day=20251015&token='
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2025-10-16 14:31:39 | WARNING  | _fetch_and_process_matches | ℹ️ Nenhuma partida encontrada
+2025-10-16 14:31:39 | INFO     | run                  | 
+✅ ATUALIZAÇÃO COMPLETA EM 0.8 SEGUNDOS
+2025-10-16 14:31:39 | INFO     | run                  | 🔌 Conexões fechadas

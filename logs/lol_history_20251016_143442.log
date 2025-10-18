@@ -1,0 +1,68 @@
+2025-10-16 14:34:42 | INFO     | run                  | 🚀 Iniciando atualização - últimos 30 dias
+2025-10-16 14:34:42 | INFO     | fetch_recent_matches | 🔍 Buscando últimos 30 dias
+2025-10-16 14:34:43 | INFO     | fetch_recent_matches | ✅ 2025-10-16: 8 partidas
+2025-10-16 14:34:43 | INFO     | fetch_recent_matches | ✅ 2025-10-15: 9 partidas
+2025-10-16 14:34:44 | INFO     | fetch_recent_matches | ✅ 2025-10-14: 1 partidas
+2025-10-16 14:34:44 | INFO     | fetch_recent_matches | ✅ 2025-10-13: 1 partidas
+2025-10-16 14:34:53 | INFO     | fetch_recent_matches | ✅ 2025-10-12: 4 partidas
+2025-10-16 14:34:53 | INFO     | fetch_recent_matches | ✅ 2025-10-11: 5 partidas
+2025-10-16 14:34:54 | INFO     | fetch_recent_matches | ✅ 2025-10-10: 5 partidas
+2025-10-16 14:34:54 | INFO     | fetch_recent_matches | ✅ 2025-10-09: 6 partidas
+2025-10-16 14:34:54 | INFO     | fetch_recent_matches | ✅ 2025-10-08: 10 partidas
+2025-10-16 14:34:55 | INFO     | fetch_recent_matches | ✅ 2025-10-07: 13 partidas
+2025-10-16 14:34:55 | INFO     | fetch_recent_matches | ✅ 2025-10-06: 15 partidas
+2025-10-16 14:34:56 | INFO     | fetch_recent_matches | ✅ 2025-10-04: 1 partidas
+2025-10-16 14:34:57 | INFO     | fetch_recent_matches | ✅ 2025-10-03: 1 partidas
+2025-10-16 14:34:57 | INFO     | fetch_recent_matches | ✅ 2025-10-02: 11 partidas
+2025-10-16 14:34:57 | INFO     | fetch_recent_matches | ✅ 2025-10-01: 17 partidas
+2025-10-16 14:34:58 | INFO     | fetch_recent_matches | ✅ 2025-09-30: 6 partidas
+2025-10-16 14:34:58 | INFO     | fetch_recent_matches | ✅ 2025-09-29: 9 partidas
+2025-10-16 14:34:59 | INFO     | fetch_recent_matches | ✅ 2025-09-28: 1 partidas
+2025-10-16 14:34:59 | INFO     | fetch_recent_matches | ✅ 2025-09-27: 2 partidas
+2025-10-16 14:35:00 | INFO     | fetch_recent_matches | ✅ 2025-09-26: 2 partidas
+2025-10-16 14:35:00 | INFO     | fetch_recent_matches | ✅ 2025-09-25: 4 partidas
+2025-10-16 14:35:01 | INFO     | fetch_recent_matches | ✅ 2025-09-24: 1 partidas
+2025-10-16 14:35:02 | INFO     | fetch_recent_matches | ✅ 2025-09-23: 5 partidas
+2025-10-16 14:35:02 | INFO     | fetch_recent_matches | ✅ 2025-09-22: 2 partidas
+2025-10-16 14:35:02 | INFO     | fetch_recent_matches | ✅ 2025-09-21: 3 partidas
+2025-10-16 14:35:03 | INFO     | fetch_recent_matches | ✅ 2025-09-20: 3 partidas
+2025-10-16 14:35:04 | INFO     | fetch_recent_matches | ✅ 2025-09-18: 1 partidas
+2025-10-16 14:35:05 | INFO     | fetch_recent_matches | ✅ 2025-09-17: 1 partidas
+2025-10-16 14:35:05 | INFO     | fetch_and_process_matches | 📥 147 partidas da API
+2025-10-16 14:35:05 | INFO     | fetch_and_process_matches | 🔄 41 partidas incompletas no banco
+2025-10-16 14:35:07 | INFO     | process_incomplete_matches | 🔧 Tentando atualizar 41 partidas incompletas
+2025-10-16 14:35:07 | INFO     | process_incomplete_matches | 🔄 Tentando atualizar 182468254
+2025-10-16 14:35:07 | INFO     | process_incomplete_matches | 🔄 182468254 atualizada (ainda não finalizada)
+2025-10-16 14:35:07 | INFO     | process_incomplete_matches | 🔄 Tentando atualizar 181883688
+2025-10-16 14:35:07 | INFO     | process_incomplete_matches | 🔄 181883688 atualizada (ainda não finalizada)
+2025-10-16 14:35:07 | INFO     | process_incomplete_matches | 🔄 Tentando atualizar 182346688
+2025-10-16 14:35:08 | INFO     | process_incomplete_matches | 🔄 182346688 atualizada (ainda não finalizada)
+2025-10-16 14:35:08 | INFO     | process_incomplete_matches | 🔄 Tentando atualizar 182295262
+2025-10-16 14:35:08 | INFO     | process_incomplete_matches | 🔄 182295262 atualizada (ainda não finalizada)
+2025-10-16 14:35:08 | INFO     | process_incomplete_matches | 🔄 Tentando atualizar 182295265
+2025-10-16 14:35:08 | INFO     | process_incomplete_matches | 🔄 182295265 atualizada (ainda não finalizada)
+2025-10-16 14:35:08 | INFO     | process_incomplete_matches | 🔄 Tentando atualizar 182272656
+2025-10-16 14:35:08 | INFO     | process_incomplete_matches | 🔄 182272656 atualizada (ainda não finalizada)
+2025-10-16 14:35:08 | INFO     | process_incomplete_matches | 🔄 Tentando atualizar 182237716
+2025-10-16 14:35:09 | INFO     | process_incomplete_matches | 🔄 182237716 atualizada (ainda não finalizada)
+2025-10-16 14:35:09 | INFO     | process_incomplete_matches | 🔄 Tentando atualizar 182237718
+2025-10-16 14:35:09 | INFO     | process_incomplete_matches | 🔄 182237718 atualizada (ainda não finalizada)
+2025-10-16 14:35:09 | INFO     | process_incomplete_matches | 🔄 Tentando atualizar 181883687
+2025-10-16 14:35:09 | INFO     | process_incomplete_matches | 🔄 181883687 atualizada (ainda não finalizada)
+2025-10-16 14:35:09 | INFO     | process_incomplete_matches | 🔄 Tentando atualizar 181883686
+2025-10-16 14:35:09 | INFO     | process_incomplete_matches | 🔄 181883686 atualizada (ainda não finalizada)
+2025-10-16 14:35:09 | INFO     | process_incomplete_matches | 🔄 Tentando atualizar 181778997
+2025-10-16 14:35:10 | INFO     | process_incomplete_matches | 🔄 181778997 atualizada (ainda não finalizada)
+2025-10-16 14:35:10 | INFO     | process_incomplete_matches | 🔄 Tentando atualizar 182181013
+2025-10-16 14:35:10 | INFO     | process_incomplete_matches | 🔄 182181013 atualizada (ainda não finalizada)
+2025-10-16 14:35:10 | INFO     | process_incomplete_matches | 🔄 Tentando atualizar 182181014
+2025-10-16 14:35:10 | INFO     | process_incomplete_matches | 🔄 182181014 atualizada (ainda não finalizada)
+2025-10-16 14:35:10 | INFO     | process_incomplete_matches | 🔄 Tentando atualizar 182181016
+2025-10-16 14:35:11 | INFO     | process_incomplete_matches | 🔄 182181016 atualizada (ainda não finalizada)
+2025-10-16 14:35:11 | INFO     | process_incomplete_matches | 🔄 Tentando atualizar 182181009
+2025-10-16 14:35:11 | INFO     | process_incomplete_matches | 🔄 182181009 atualizada (ainda não finalizada)
+2025-10-16 14:35:11 | INFO     | process_incomplete_matches | 🔄 Tentando atualizar 182181010
+2025-10-16 14:35:11 | INFO     | process_incomplete_matches | 🔄 182181010 atualizada (ainda não finalizada)
+2025-10-16 14:35:11 | INFO     | process_incomplete_matches | 🔄 Tentando atualizar 182181011
+2025-10-16 14:35:11 | INFO     | process_incomplete_matches | 🔄 182181011 atualizada (ainda não finalizada)
+2025-10-16 14:35:11 | INFO     | run                  | ✅ Completo em 29.1s - Novas: 0, Atualizadas: 23, Erros: 0

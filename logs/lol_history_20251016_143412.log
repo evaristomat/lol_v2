@@ -1,0 +1,16 @@
+2025-10-16 14:34:13 | INFO     | run                  | 🚀 Iniciando atualização - últimos 10 dias
+2025-10-16 14:34:13 | INFO     | fetch_recent_matches | 🔍 Buscando últimos 10 dias
+2025-10-16 14:34:13 | INFO     | fetch_recent_matches | ✅ 2025-10-16: 8 partidas
+2025-10-16 14:34:14 | INFO     | fetch_recent_matches | ✅ 2025-10-15: 9 partidas
+2025-10-16 14:34:15 | INFO     | fetch_recent_matches | ✅ 2025-10-14: 1 partidas
+2025-10-16 14:34:15 | INFO     | fetch_recent_matches | ✅ 2025-10-13: 1 partidas
+2025-10-16 14:34:17 | INFO     | fetch_recent_matches | ✅ 2025-10-12: 4 partidas
+2025-10-16 14:34:18 | INFO     | fetch_recent_matches | ✅ 2025-10-11: 5 partidas
+2025-10-16 14:34:18 | INFO     | fetch_recent_matches | ✅ 2025-10-10: 5 partidas
+2025-10-16 14:34:19 | INFO     | fetch_recent_matches | ✅ 2025-10-09: 6 partidas
+2025-10-16 14:34:19 | INFO     | fetch_recent_matches | ✅ 2025-10-08: 10 partidas
+2025-10-16 14:34:20 | INFO     | fetch_recent_matches | ✅ 2025-10-07: 13 partidas
+2025-10-16 14:34:20 | INFO     | fetch_and_process_matches | 📥 62 partidas da API
+2025-10-16 14:34:20 | INFO     | fetch_and_process_matches | 🔄 24 partidas incompletas no banco
+2025-10-16 14:34:20 | INFO     | process_incomplete_matches | 🔧 Tentando atualizar 24 partidas incompletas
+2025-10-16 14:34:20 | INFO     | run                  | ✅ Completo em 7.2s - Novas: 0, Atualizadas: 0, Erros: 0

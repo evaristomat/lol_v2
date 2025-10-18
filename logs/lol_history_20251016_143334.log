@@ -1,0 +1,8 @@
+2025-10-16 14:33:34 | INFO     | run                  | 🚀 Iniciando atualização - últimos 2 dias
+2025-10-16 14:33:34 | INFO     | fetch_recent_matches | 🔍 Buscando últimos 2 dias
+2025-10-16 14:33:35 | INFO     | fetch_recent_matches | ✅ 2025-10-16: 8 partidas
+2025-10-16 14:33:36 | INFO     | fetch_recent_matches | ✅ 2025-10-15: 9 partidas
+2025-10-16 14:33:36 | INFO     | fetch_and_process_matches | 📥 17 partidas da API
+2025-10-16 14:33:36 | INFO     | fetch_and_process_matches | 🔄 1 partidas incompletas no banco
+2025-10-16 14:33:36 | INFO     | process_incomplete_matches | 🔧 Tentando atualizar 1 partidas incompletas
+2025-10-16 14:33:36 | INFO     | run                  | ✅ Completo em 1.4s - Novas: 0, Atualizadas: 0, Erros: 0

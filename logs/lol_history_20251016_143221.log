@@ -1,0 +1,21 @@
+2025-10-16 14:32:22 | INFO     | __init__             | 📀 Database inicializado: data\lol_history.db
+2025-10-16 14:32:22 | INFO     | run                  | ============================================================
+2025-10-16 14:32:22 | INFO     | run                  | 🚀 INICIANDO ATUALIZAÇÃO DO HISTÓRICO DE PARTIDAS
+2025-10-16 14:32:22 | INFO     | run                  | ============================================================
+2025-10-16 14:32:22 | INFO     | _fetch_and_process_matches | 
+📅 FASE 1: Buscando partidas dos últimos 2 dias...
+2025-10-16 14:32:22 | INFO     | fetch_recent_matches | 🔍 Buscando últimos 2 dias
+2025-10-16 14:32:23 | INFO     | fetch_recent_matches | ✅ 2025-10-16: 8 partidas
+2025-10-16 14:32:23 | INFO     | fetch_recent_matches | ✅ 2025-10-15: 9 partidas
+2025-10-16 14:32:23 | INFO     | _fetch_and_process_matches | ✅ 17 partidas encontradas
+2025-10-16 14:32:23 | INFO     | _fetch_and_process_matches | 
+⚔️  FASE 2: Processando partidas e buscando resultados...
+2025-10-16 14:32:23 | ERROR    | run                  | ❌ Erro durante atualização: 'MatchService' object has no attribute 'process_matches'
+Traceback (most recent call last):
+  File "C:\Users\matheus\code\lol_api_v2\src\get_history\orchestrator.py", line 30, in run
+    await self._fetch_and_process_matches(days_back)
+  File "C:\Users\matheus\code\lol_api_v2\src\get_history\orchestrator.py", line 53, in _fetch_and_process_matches
+    stats = await self.match_service.process_matches(matches)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MatchService' object has no attribute 'process_matches'. Did you mean: 'process_api_matches'?
+2025-10-16 14:32:23 | INFO     | run                  | 🔌 Conexões fechadas

@@ -1,205 +1,240 @@
-#!/usr/bin/env python3
-"""
-Inspeciona 1 jogo aleatório de ontem (LOL) e salva todo o payload da API.
-- Usa Bet365Client do seu projeto
-- Chama upcoming(yesterday) -> escolhe 1 evento -> result(event_id) [+ tenta prematch(event_id)]
-- Salva JSONs brutos em results/raw_api/
-"""
-
-import asyncio
-import json
-import os
-import random
-import sys
-from dataclasses import dataclass
-from datetime import datetime, timedelta
+# scripts/migrate_all_odds.py
+import sqlite3
+from datetime import datetime
 from pathlib import Path
-from typing import Any, Dict, List, Optional
-
-# Permite importar src.core.bet365_client a partir deste arquivo em scripts/
-sys.path.insert(0, str(Path(__file__).parent.parent))
-
-from src.shared.core.bet365_client import Bet365Client  # noqa: E402
-
-LOL_SPORT_ID = 151
-OUTDIR = Path(__file__).parent.parent / "results" / "raw_api"
-OUTDIR.mkdir(parents=True, exist_ok=True)
 
 
-@dataclass
-class PickedEvent:
-    event_id: str
-    league_name: str
-    home_name: str
-    away_name: str
-    raw_event: Dict[str, Any]
+class AllOddsMigrator:
+    def __init__(self):
+        self.old_db = "data/lol_odds_old.db"
+        self.new_db = "data/lol_odds.db"
+        self.stats = {
+            "odds_migrated": 0,
+            "odds_skipped": 0,
+            "errors": [],
+        }
 
+    def validate_databases(self):
+        """Valida se os bancos existem"""
+        if not Path(self.old_db).exists():
+            raise FileNotFoundError(f"❌ Banco antigo não encontrado: {self.old_db}")
 
-def day_str_for(dt: datetime) -> str:
-    return dt.strftime("%Y%m%d")
+        if not Path(self.new_db).exists():
+            raise FileNotFoundError(f"❌ Banco novo não encontrado: {self.new_db}")
 
+        print("✅ Ambos os bancos encontrados")
 
-def is_lol_event(ev: Dict[str, Any]) -> bool:
-    league_name = (ev.get("league") or {}).get("name", "").strip()
-    return league_name.startswith("LOL -")
+    def migrate_all_odds(self, batch_size=1000):
+        """Migra TODAS as odds do banco antigo para o novo"""
+        print("\n" + "=" * 60)
+        print("📊 MIGRANDO TODAS AS ODDS DO BANCO ANTIGO")
+        print("=" * 60)
 
+        old_conn = sqlite3.connect(self.old_db)
+        new_conn = sqlite3.connect(self.new_db)
 
-def is_final_like(ev: Dict[str, Any]) -> bool:
-    """
-    Heurística simples: se o campo 'time_status' do evento veio 3/ "3".
-    Nem sempre upcoming reflete finalizados, mas ajuda a priorizar jogos encerrados.
-    """
-    ts = ev.get("time_status")
-    try:
-        return int(ts) == 3
-    except Exception:
-        return str(ts) == "3"
+        old_cursor = old_conn.cursor()
+        new_cursor = new_conn.cursor()
 
+        # Contar total de odds
+        old_cursor.execute("SELECT COUNT(*) FROM current_odds")
+        total_odds = old_cursor.fetchone()[0]
 
-def summarize_top_keys(tag: str, payload: Dict[str, Any]) -> None:
-    print(f"\n===== RESUMO DAS CHAVES ({tag}) =====")
-    if not isinstance(payload, dict):
-        print(f"({tag}) não é dict, tipo={type(payload)}")
-        return
-    keys = list(payload.keys())
-    print(f"Total de chaves no nível 1: {len(keys)}")
-    print("Algumas chaves:", ", ".join(keys[:20]))
-    # Se for o envelope padrão {success, results, ...}
-    results = payload.get("results")
-    if isinstance(results, list) and results:
-        first = results[0]
-        if isinstance(first, dict):
-            print(f"Chaves do primeiro item em results ({tag}):")
-            print(", ".join(list(first.keys())[:40]))
+        print(f"📊 Total de odds no banco antigo: {total_odds:,}")
+        print(f"⏳ Processando em batches de {batch_size}...")
 
+        offset = 0
+        processed = 0
 
-async def fetch_yesterday_events(
-    client: Bet365Client, seed: Optional[int] = None
-) -> List[Dict[str, Any]]:
-    yesterday = datetime.now() - timedelta(days=1)
-    day = day_str_for(yesterday)
-    print(
-        f"🔎 Buscando eventos de ontem ({yesterday.strftime('%Y-%m-%d')}) -> day={day}"
-    )
-    data = await client.upcoming(sport_id=LOL_SPORT_ID, day=day)
-    if not data or data.get("success") != 1:
-        print("⚠️  upcoming não retornou success=1 ou veio vazio.")
-        return []
-    events = data.get("results", [])
-    lol_events = [e for e in events if is_lol_event(e)]
-    print(f"📦 Eventos retornados: {len(events)} | LOL filtrados: {len(lol_events)}")
-    random.Random(seed).shuffle(lol_events)
-    return lol_events
+        while True:
+            # Buscar batch de odds do banco antigo
+            old_cursor.execute(
+                """
+                SELECT event_id, odds_type, market_name, selection_name, 
+                       odds_value, handicap, updated_at, raw_data
+                FROM current_odds
+                LIMIT ? OFFSET ?
+            """,
+                (batch_size, offset),
+            )
 
+            batch = old_cursor.fetchall()
 
-def pick_one_event(events: List[Dict[str, Any]]) -> Optional[PickedEvent]:
-    if not events:
-        return None
-    # Prioriza “finalizados”; se não houver, usa qualquer um
-    finals = [e for e in events if is_final_like(e)]
-    pool = finals if finals else events
-    ev = random.choice(pool)
-    ev_id = str(ev.get("id"))
-    league_name = (ev.get("league") or {}).get("name") or "?"
-    home_name = (ev.get("home") or {}).get("name") or "?"
-    away_name = (ev.get("away") or {}).get("name") or "?"
-    return PickedEvent(
-        event_id=ev_id,
-        league_name=league_name,
-        home_name=home_name,
-        away_name=away_name,
-        raw_event=ev,
-    )
+            if not batch:
+                break
 
+            for row in batch:
+                try:
+                    (
+                        event_id,
+                        odds_type,
+                        market_name,
+                        selection_name,
+                        odds_value,
+                        handicap,
+                        updated_at,
+                        raw_data,
+                    ) = row
 
-async def fetch_event_payloads(client: Bet365Client, event_id: str) -> Dict[str, Any]:
-    out: Dict[str, Any] = {"result": None, "prematch": None}
-    # RESULT
-    try:
-        print(f"⬇️  Baixando result({event_id})…")
-        res = await client.result(event_id)
-        out["result"] = res
-    except Exception as e:
-        print(f"❌ Erro em result({event_id}): {e}")
+                    processed += 1
 
-    # PREMATCH (opcional, só se o client tiver)
-    try:
-        if hasattr(client, "prematch"):
-            print(f"⬇️  Baixando prematch({event_id})…")
-            pre = await client.prematch(event_id)  # pode não existir no seu client
-            out["prematch"] = pre
+                    # Verificar se a odd já existe no novo banco
+                    new_cursor.execute(
+                        """
+                        SELECT id FROM current_odds 
+                        WHERE event_id = ? AND odds_type = ? 
+                        AND market_type = ? AND selection = ? AND line = ?
+                    """,
+                        (
+                            event_id,
+                            odds_type,
+                            market_name,
+                            selection_name,
+                            handicap or "",
+                        ),
+                    )
+
+                    if new_cursor.fetchone():
+                        self.stats["odds_skipped"] += 1
+                        continue
+
+                    # Extrair map_number
+                    map_number = None
+                    if market_name and "Map 1" in market_name:
+                        map_number = 1
+                    elif market_name and "Map 2" in market_name:
+                        map_number = 2
+                    elif market_name and "Map 3" in market_name:
+                        map_number = 3
+
+                    # Inserir odd no novo banco (mesmo que o evento não exista na tabela events)
+                    new_cursor.execute(
+                        """
+                        INSERT INTO current_odds (
+                            event_id, odds_type, market_type, selection, odds, 
+                            line, map_number, updated_at, raw_data
+                        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    """,
+                        (
+                            event_id,
+                            odds_type,
+                            market_name,  # → market_type
+                            selection_name,  # → selection
+                            odds_value,  # → odds
+                            handicap or "",  # → line
+                            map_number,
+                            updated_at,
+                            raw_data,
+                        ),
+                    )
+
+                    self.stats["odds_migrated"] += 1
+
+                except Exception as e:
+                    self.stats["errors"].append(f"Odd event {event_id}: {str(e)[:100]}")
+
+            # Commit do batch
+            new_conn.commit()
+
+            offset += batch_size
+            progress = min(offset, total_odds)
+            percentage = (progress / total_odds) * 100
+
+            if offset % 5000 == 0:
+                print(
+                    f"   📊 Progresso: {progress:,}/{total_odds:,} ({percentage:.1f}%) - Migradas: {self.stats['odds_migrated']:,}"
+                )
+
+        old_conn.close()
+        new_conn.close()
+
+        print(f"✅ Odds migradas: {self.stats['odds_migrated']:,}")
+        print(f"⏭️ Odds puladas (já existiam): {self.stats['odds_skipped']:,}")
+
+    def show_summary(self):
+        """Mostra resumo da migração"""
+        print("\n" + "=" * 60)
+        print("📊 RESUMO DA MIGRAÇÃO COMPLETA")
+        print("=" * 60)
+
+        new_conn = sqlite3.connect(self.new_db)
+        new_cursor = new_conn.cursor()
+
+        new_cursor.execute("SELECT COUNT(*) FROM current_odds")
+        total_odds = new_cursor.fetchone()[0]
+
+        new_conn.close()
+
+        print(f"\n📈 BANCO NOVO APÓS MIGRAÇÃO:")
+        print(f"   • Total de odds: {total_odds:,}")
+
+        print(f"\n✅ ODDS MIGRADAS: {self.stats['odds_migrated']:,}")
+
+        if self.stats["errors"]:
+            print(f"\n❌ ERROS ({len(self.stats['errors'])}):")
+            for i, error in enumerate(self.stats["errors"][:5], 1):
+                print(f"   {i}. {error}")
+            if len(self.stats["errors"]) > 5:
+                print(f"   ... e mais {len(self.stats['errors']) - 5} erros")
         else:
-            print("ℹ️  Bet365Client não possui método prematch(). Pulando…")
-    except Exception as e:
-        print(f"❌ Erro em prematch({event_id}): {e}")
+            print(f"\n✅ Nenhum erro encontrado!")
 
-    return out
+    def run(self):
+        """Executa a migração completa"""
+        print("🚀 INICIANDO MIGRAÇÃO COMPLETA DE ODDS")
+        print("=" * 60)
 
+        try:
+            self.validate_databases()
 
-def save_json(obj: Any, path: Path) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("w", encoding="utf-8") as f:
-        json.dump(obj, f, ensure_ascii=False, indent=2)
+            # Mostrar situação atual
+            old_conn = sqlite3.connect(self.old_db)
+            new_conn = sqlite3.connect(self.new_db)
 
+            old_cursor = old_conn.cursor()
+            new_cursor = new_conn.cursor()
 
-async def main(seed: Optional[int] = None):
-    print("🧪 INSPEÇÃO DE JOGO ALEATÓRIO (ONTEM) — LOL")
-    client = Bet365Client()
-    try:
-        events = await fetch_yesterday_events(client, seed=seed)
-        if not events:
-            print("🙁 Sem eventos para inspecionar.")
-            return
+            old_cursor.execute("SELECT COUNT(*) FROM current_odds")
+            old_total_odds = old_cursor.fetchone()[0]
 
-        picked = pick_one_event(events)
-        if not picked:
-            print("🙁 Não foi possível sortear um evento.")
-            return
+            new_cursor.execute("SELECT COUNT(*) FROM current_odds")
+            new_total_odds = new_cursor.fetchone()[0]
 
-        print("\n🎯 Evento sorteado:")
-        print(f"   ID: {picked.event_id}")
-        print(f"   Liga: {picked.league_name}")
-        print(f"   Jogo: {picked.home_name} vs {picked.away_name}")
-        print(f"   time_status (do upcoming): {picked.raw_event.get('time_status')}")
+            old_conn.close()
+            new_conn.close()
 
-        payloads = await fetch_event_payloads(client, picked.event_id)
+            print(f"\n📊 SITUAÇÃO ATUAL:")
+            print(f"   Banco antigo: {old_total_odds:,} odds")
+            print(f"   Banco novo: {new_total_odds:,} odds")
 
-        # Sumário rápido no console
-        if payloads.get("result") is not None:
-            summarize_top_keys("result", payloads["result"])
-        if payloads.get("prematch") is not None:
-            summarize_top_keys("prematch", payloads["prematch"])
+            print(f"\n🎯 ESTA MIGRAÇÃO IRÁ:")
+            print(f"   • Migrar TODAS as odds do banco antigo")
+            print(f"   • Ignorar apenas odds duplicadas")
+            print(
+                f"   • As odds serão migradas mesmo que os eventos não existam na tabela events"
+            )
 
-        # Salvar brutos
-        date_tag = (datetime.now() - timedelta(days=1)).strftime("%Y-%m-%d")
-        base = OUTDIR / f"{date_tag}_{picked.event_id}"
+            confirm = input("\n🤔 Deseja continuar? (sim/não): ")
 
-        save_json(picked.raw_event, base.with_suffix(".upcoming.json"))
-        if payloads.get("result") is not None:
-            save_json(payloads["result"], base.with_suffix(".result.json"))
-        if payloads.get("prematch") is not None:
-            save_json(payloads["prematch"], base.with_suffix(".prematch.json"))
+            if confirm.lower() not in ["sim", "s", "yes", "y"]:
+                print("❌ Migração cancelada")
+                return
 
-        print("\n💾 Arquivos salvos:")
-        print(f" - {os.path.relpath(base.with_suffix('.upcoming.json'))}")
-        if payloads.get("result") is not None:
-            print(f" - {os.path.relpath(base.with_suffix('.result.json'))}")
-        if payloads.get("prematch") is not None:
-            print(f" - {os.path.relpath(base.with_suffix('.prematch.json'))}")
+            # Executar migração
+            self.migrate_all_odds()
 
-        print(
-            "\n✅ Pronto! Agora você pode abrir esses JSONs e mapear tudo que a API retorna."
-        )
-        print(
-            "   Dica: no bot, comece mapeando `results[0]` -> campos-chave como `ss`, `time_status`, `period_stats`, etc."
-        )
+            # Mostrar resumo
+            self.show_summary()
 
-    finally:
-        await client.close()
+            print("\n✅ MIGRAÇÃO COMPLETA CONCLUÍDA!")
+
+        except Exception as e:
+            print(f"\n❌ ERRO CRÍTICO: {e}")
+            import traceback
+
+            traceback.print_exc()
 
 
 if __name__ == "__main__":
-    # Use: python inspect_random_yesterday.py
-    # Ou:   python inspect_random_yesterday.py com SEED fixa (reprodutibilidade)
-    # Para mudar a seed, exporte SEED=123 e chame o script; ou edite abaixo.
-    asyncio.run(main(seed=None))
+    migrator = AllOddsMigrator()
+    migrator.run()
