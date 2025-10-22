@@ -1,0 +1,14 @@
+2025-10-19 10:13:57 | INFO     | run                  | 🚀 Iniciando atualização - últimos 3 dias
+2025-10-19 10:13:57 | INFO     | fetch_recent_matches | 🔍 Buscando últimos 3 dias
+2025-10-19 10:13:59 | INFO     | fetch_recent_matches | ✅ 2025-10-19: 2 partidas
+2025-10-19 10:14:03 | INFO     | fetch_recent_matches | ✅ 2025-10-18: 4 partidas
+2025-10-19 10:14:06 | INFO     | fetch_recent_matches | ✅ 2025-10-17: 4 partidas
+2025-10-19 10:14:06 | INFO     | fetch_and_process_matches | 📥 10 partidas da API
+2025-10-19 10:14:06 | INFO     | fetch_and_process_matches | 🔄 2 partidas incompletas no banco
+2025-10-19 10:14:18 | INFO     | process_incomplete_matches | 🔧 Tentando atualizar 2 partidas incompletas
+2025-10-19 10:14:18 | INFO     | process_incomplete_matches | 🔄 Tentando atualizar 182917844
+2025-10-19 10:14:20 | INFO     | process_incomplete_matches | 🔄 182917844 atualizada (ainda não finalizada)
+2025-10-19 10:14:20 | INFO     | process_incomplete_matches | 🔄 Tentando atualizar 182920103
+2025-10-19 10:14:26 | ERROR    | process_incomplete_matches | ❌ Erro ao atualizar 182920103: HTTP error: Server error '500 Internal Server Error' for url 'https://api.b365api.com/v1/bet365/result?event_id=182920103&token=148381-MKvIM2221vISOJ'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2025-10-19 10:14:26 | INFO     | run                  | ✅ Completo em 29.0s - Novas: 6, Atualizadas: 3, Erros: 1

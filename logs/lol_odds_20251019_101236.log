@@ -1,0 +1,60 @@
+2025-10-19 10:12:37 | INFO     | __init__             | 📀 Database inicializado: C:\Users\matheus\code\lol_api_v2\data\lol_odds.db
+2025-10-19 10:12:37 | INFO     | run                  | ============================================================
+2025-10-19 10:12:37 | INFO     | run                  | 🚀 INICIANDO ATUALIZAÇÃO DO BANCO DE ODDS LOL
+2025-10-19 10:12:37 | INFO     | run                  | ============================================================
+2025-10-19 10:12:37 | INFO     | _fetch_events        | 
+📅 FASE 1: Buscando eventos...
+2025-10-19 10:12:37 | INFO     | fetch_upcoming_events | 🔍 Buscando eventos para os próximos 10 dias
+2025-10-19 10:12:37 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-19
+2025-10-19 10:12:39 | INFO     | fetch_upcoming_events |    ✅ 2 jogos de LoL encontrados
+2025-10-19 10:12:39 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-20
+2025-10-19 10:12:39 | INFO     | fetch_upcoming_events |    ✅ 1 jogos de LoL encontrados
+2025-10-19 10:12:39 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-21
+2025-10-19 10:12:45 | ERROR    | fetch_upcoming_events | ❌ Erro ao buscar eventos para 20251021: HTTP error: Server error '500 Internal Server Error' for url 'https://api.b365api.com/v1/bet365/upcoming?sport_id=151&day=20251021&token=148381-MKvIM2221vISOJ'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2025-10-19 10:12:45 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-22
+2025-10-19 10:12:45 | INFO     | fetch_upcoming_events |    ✅ 2 jogos de LoL encontrados
+2025-10-19 10:12:45 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-23
+2025-10-19 10:12:47 | INFO     | fetch_upcoming_events |    ✅ 2 jogos de LoL encontrados
+2025-10-19 10:12:47 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-24
+2025-10-19 10:12:49 | INFO     | fetch_upcoming_events |    ✅ 2 jogos de LoL encontrados
+2025-10-19 10:12:49 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-25
+2025-10-19 10:12:50 | INFO     | fetch_upcoming_events |    ℹ️  Nenhum jogo de LoL encontrado
+2025-10-19 10:12:50 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-26
+2025-10-19 10:12:52 | INFO     | fetch_upcoming_events |    ℹ️  Nenhum jogo de LoL encontrado
+2025-10-19 10:12:52 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-27
+2025-10-19 10:12:52 | INFO     | fetch_upcoming_events |    ℹ️  Nenhum evento encontrado para 20251027
+2025-10-19 10:12:52 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-28
+2025-10-19 10:12:53 | INFO     | fetch_upcoming_events |    ℹ️  Nenhum evento encontrado para 20251028
+2025-10-19 10:12:53 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-29
+2025-10-19 10:12:53 | INFO     | fetch_upcoming_events |    ℹ️  Nenhum evento encontrado para 20251029
+2025-10-19 10:12:53 | INFO     | fetch_upcoming_events | 📊 Total de eventos encontrados: 9
+2025-10-19 10:12:53 | INFO     | save_events          | ✅ Novo evento: Los Ratones vs Karmine Corp Blue - LOL - EMEA Masters Summer
+2025-10-19 10:12:53 | INFO     | save_events          | ✅ Novo evento: Hanwha Life Esports vs CTBC Flying Oyster - LOL - World Champs
+2025-10-19 10:12:53 | INFO     | save_events          | ✅ Novo evento: G2 Esports vs FlyQuest - LOL - World Champs
+2025-10-19 10:12:53 | INFO     | save_events          | ✅ Novo evento: Movistar KOI vs Team Secret Whales - LOL - World Champs
+2025-10-19 10:12:53 | INFO     | save_events          | ✅ Novo evento: Gen.G vs Top Esports - LOL - World Champs
+2025-10-19 10:12:53 | INFO     | save_events          | ✅ Novo evento: Bilibili Gaming vs Vivo Keyd Stars - LOL - World Champs
+2025-10-19 10:12:53 | INFO     | save_events          | ✅ Novo evento: 100 Thieves vs T1 - LOL - World Champs
+2025-10-19 10:12:53 | INFO     | save_events          | 📝 Eventos processados - Novos: 7, Existentes: 2, Atualizados: 0
+2025-10-19 10:12:53 | INFO     | _fetch_events        | ✅ Fase 1 concluída - 7 novos eventos adicionados
+2025-10-19 10:12:53 | INFO     | _update_odds         | 
+💰 FASE 2: Atualizando odds...
+2025-10-19 10:12:53 | INFO     | fetch_and_save_odds  | 💰 Coletando odds para 84 eventos em lotes de 10
+2025-10-19 10:12:53 | INFO     | fetch_and_save_odds  |    📦 Processando lote 1/9
+2025-10-19 10:12:56 | INFO     | fetch_and_save_odds  |    📦 Processando lote 2/9
+2025-10-19 10:12:57 | INFO     | fetch_and_save_odds  |    📦 Processando lote 3/9
+2025-10-19 10:13:06 | INFO     | fetch_and_save_odds  |    📦 Processando lote 4/9
+2025-10-19 10:13:08 | INFO     | fetch_and_save_odds  |    📦 Processando lote 5/9
+2025-10-19 10:13:13 | INFO     | fetch_and_save_odds  |    📦 Processando lote 6/9
+2025-10-19 10:13:18 | ERROR    | _fetch_odds_for_event |       ❌ Erro ao coletar odds para Ghost_Home_10425283 vs Ghost_Away_11321454: HTTP error: Server error '500 Internal Server Error' for url 'https://api.b365api.com/v3/bet365/prematch?FI=181778805&token=148381-MKvIM2221vISOJ'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2025-10-19 10:13:19 | INFO     | fetch_and_save_odds  |    📦 Processando lote 7/9
+2025-10-19 10:13:21 | INFO     | fetch_and_save_odds  |    📦 Processando lote 8/9
+2025-10-19 10:13:26 | INFO     | fetch_and_save_odds  |    📦 Processando lote 9/9
+2025-10-19 10:13:28 | INFO     | fetch_and_save_odds  | 📊 Coleta finalizada: 83/84 eventos com odds
+2025-10-19 10:13:28 | INFO     | _update_odds         | ✅ Fase 2 concluída - 83 eventos com odds atualizadas
+2025-10-19 10:13:28 | INFO     | _show_dashboard      | 💾 Dashboard salvo em: C:\Users\matheus\code\lol_api_v2\reports\dashboard_20251019_101328.txt
+2025-10-19 10:13:28 | INFO     | run                  | 
+✅ ATUALIZAÇÃO COMPLETA EM 51.2 SEGUNDOS
+2025-10-19 10:13:28 | INFO     | run                  | 🔌 Conexões fechadas

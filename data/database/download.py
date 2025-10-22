@@ -1,7 +1,8 @@
-import requests
 import os
 import sys
-from datetime import datetime, date
+from datetime import date, datetime
+
+import requests
 
 
 def download_file_from_google_drive(file_id: str, destination: str):
@@ -40,7 +41,7 @@ def _save_response_content(response, destination, chunk_size=32768):
 
 if __name__ == "__main__":
     FILE_ID = "1v6LRphp2kYciU4SXp0PCjEMuev1bDejc"
-    DEST_DIR = r"C:\ProgramData\anaconda3\envs\bet365\bet365\database"
+    DEST_DIR = r"C:\Users\matheus\code\lol_api_v2\data\database"
     os.makedirs(DEST_DIR, exist_ok=True)
     DEST_PATH = os.path.join(DEST_DIR, "database.csv")
 

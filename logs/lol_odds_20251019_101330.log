@@ -1,0 +1,16 @@
+2025-10-19 10:13:31 | INFO     | __init__             | 📀 Database inicializado: C:\Users\matheus\code\lol_api_v2\data\lol_odds.db
+2025-10-19 10:13:31 | INFO     | run                  | ============================================================
+2025-10-19 10:13:31 | INFO     | run                  | 🚀 INICIANDO ATUALIZAÇÃO DO BANCO DE ODDS LOL
+2025-10-19 10:13:31 | INFO     | run                  | ============================================================
+2025-10-19 10:13:31 | INFO     | _fetch_events        | 
+📅 FASE 1: Buscando eventos...
+2025-10-19 10:13:31 | INFO     | fetch_upcoming_events | 🔍 Buscando eventos para os próximos 10 dias
+2025-10-19 10:13:31 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-19
+2025-10-19 10:13:32 | INFO     | fetch_upcoming_events |    ✅ 2 jogos de LoL encontrados
+2025-10-19 10:13:32 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-20
+2025-10-19 10:13:35 | INFO     | fetch_upcoming_events |    ✅ 1 jogos de LoL encontrados
+2025-10-19 10:13:35 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-21
+2025-10-19 10:13:40 | ERROR    | fetch_upcoming_events | ❌ Erro ao buscar eventos para 20251021: HTTP error: Server error '500 Internal Server Error' for url 'https://api.b365api.com/v1/bet365/upcoming?sport_id=151&day=20251021&token=148381-MKvIM2221vISOJ'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2025-10-19 10:13:40 | INFO     | fetch_upcoming_events | 📅 Buscando eventos para 2025-10-22
+2025-10-19 10:13:42 | INFO     | run                  | 🔌 Conexões fechadas
